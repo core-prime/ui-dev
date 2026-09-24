@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form</title>
 </head>
 <body>
     <form>
@@ -47,13 +47,39 @@
 
         <label for="">Fv color:</label>
         <input type="color"> <br> <br>
-        
+         
+        <label>website</label>
+        <input type="url" placeholder="enter website url"><br><br>
+
+        <label>volume</label>
+        <input type="range"> <br><br>
+
+        <label>phone no:</label>
+        <input type="tel" placeholder="enter phone numebr" maxlength="10"> <br> <br>
+
+        <label>message:</label>
+        <textarea cols="90" rows="10" placeholder="enter message here"></textarea>
+     <br><br>
+
+     <label>userid:</label>
+     <input type="text" value="12345"> <br><br>
+
+     <fieldset>
+        <legend>
+            subscripion plan
+        </legend>
+        <input type="radio" name="plan id"> basic <br>
+        <input type="radio" name="plan id"> premium
+     </fieldset> <br><br>
+
+     <input type="submit" value="submit">
+     <input type="reset" value="reset">
+
+     <button>submit</button>
+     <button onclick="alert('button Clicked')">click</button>
 
 
-
-
-
-
-    </form>
+</form>
+    
 </body>
 </html>
