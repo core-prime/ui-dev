@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .st {
+            width: 20%;
+            height: 200px;
+            background-color: greenyellow;
+            position: static;
+            /* left right top  bottum won't work */
+        }
+
+        .fd {
+            width: 20%;
+            height: 200px;
+            background-color: rgb(255, 165, 47);
+            position: fixed;
+            right: 0px;
+        }
+
+        .sty {
+            width: 20%;
+            height: 100px;
+            background-color: rgb(47, 85, 255);
+            position: sticky;
+            top: 0px;
+        }
+
+        .re {
+            width: 20%;
+            height: 100px;
+            background-color: rgb(47, 85, 255);
+            position: relative;
+            top: 10px;
+        }
+
+        .ab {
+            width: 20%;
+            height: 100px;
+            background-color: rgb(15, 25, 70);
+            position: absolute;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="st">
+        <h1>static</h1>
+    </div>
+    <div class="fd">
+        <h2>fixed</h2>
+    </div>
+    <div class="sty">
+        <h3>sticky</h3>
+    </div>
+    <p style="padding-bottom: 2000px;"></p>
+    <div class="re">
+        <h3>relative</h3>
+        <div class="ab">
+            <h4>absolute</h4>
+        </div>
+    </div>
+
+</body>
+
+</html>
