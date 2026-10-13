@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }
+        .box1 {
+            background: red;
+            animation: moveright 2s ease-in-out infinite alternate;
+        }
+
+         @keyframes moveright {
+            from { transform:translateX(0%);}
+            to { transform:translateX(100%);}
+        }
+
+         .box2 {
+            background: orange;
+            animation: sca 2s ease-in-out infinite alternate;
+        }
+        @keyframes sca {
+            from { transform:scaele(0%);}
+            to { transform:translateX(100%);}
+        }
+
+
+         .box3 {
+            background: yellow;
+            animation: spin 2s ease-in-out infinite alternate;
+        }
+        @keyframes spin {
+            from { transform:rotate(0deg);}
+            to { transform:rotate(340deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <h2>multiple boxes with diffrent animation</h2>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+    </div>
+</body>
+</html>
