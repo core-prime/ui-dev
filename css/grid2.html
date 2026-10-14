@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Main Dashboard Grid Container */
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: 220px 1fr 260px;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Left Sidebar (Teal) */
+        .sidebar-left {
+            background-color: #008080;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .sidebar-left h2 {
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        /* Main Content Area (Beige/Cream) */
+        .main-content {
+            background-color: #F5EBE0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        /* Cards Grid (2 columns, 3 rows) */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 180px);
+            grid-template-rows: repeat(3, 130px);
+            gap: 25px;
+        }
+
+        /* Individual Purple Cards */
+        .card {
+            background-color: #7C3AED;
+            color: white;
+            border-radius: 6px;
+            padding: 15px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            font-size: 16px;
+            font-weight: 500;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+            text-transform: lowercase;
+        }
+
+        /* Right Panel (Blue) */
+        .panel-right {
+            background-color: #3B82F6;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Left Sidebar -->
+        <div class="sidebar-left">
+            <h2>User Settings</h2>
+        </div>
+
+        <!-- Main Content with 6 Cards -->
+        <div class="main-content">
+            <div class="cards-grid">
+                <div class="card">users</div>
+                <div class="card">products</div>
+                <div class="card">order</div>
+                <div class="card">reports</div>
+                <div class="card">revenue</div>
+                <div class="card">messages</div>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="panel-right">
+            <!-- Right panel content goes here -->
+        </div>
+    </div>
+
+</body>
+</html>
