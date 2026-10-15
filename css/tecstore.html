@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            align-items: center;
+            height: 100px;
+            
+
+        }
+        ul{
+            
+            display: flex;
+            gap: 34px;
+            list-style-type: none;
+            text-transform: uppercase;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .hero {
+            display: flex;
+              margin-top: 5%;
+              margin-left: 5%;
+        }
+        .right{
+            margin-left: 32%;
+           img { border-radius: 7px;}
+           animation: move 5s ease infinite alternate;
+           transition: 1s ease;
+          
+        }
+        
+        @keyframes move {
+            0%,100% {
+                transform: translateY(0);
+
+            }
+            50%{
+                transform: translateY(-50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="margin-left: 3%;">TecStore</h1>
+        <ul style="margin-right: 3%;">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+    </div>
+    <div class="hero"> 
+        <div class="left"><h1>smart watch pro</h1>
+            <p>stay conncted, track your fitness, and manage your daily tasks...</p>
+            <button>buy now</button>
+        </div>
+        <div class="right">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQawPCTOIj-wwlSVLDoUY_-ehlh5YI53E3xH2ypZpk2gw&s=10" alt="image" width="300">
+        </div>
+    </div>
+
+
+    <div>
+
+    </div>
+</body>
+</html>
