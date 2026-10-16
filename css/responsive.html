@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .main{
+        .main {
             display: flex;
             gap: 2%;
         }
-        .box{
+
+        .box {
             width: 30%;
             height: 400px;
             background-color: aqua;
         }
-        @media(max-width:856px){
-            .main{flex-direction: column;
-            gap: 70px;}
 
-             .box{
-            width: 30%;
-            background-color: blueviolet;
-        }
-            
-        
-       
+        @media(max-width:856px) {
+            .main {
+                flex-direction: column;
+                gap: 70px;
+            }
+
+            .box {
+                width: 30%;
+                background-color: blueviolet;
+            }
     </style>
 </head>
+
 <body>
     <div class="main">
         <div class="box">box1</div>
@@ -37,4 +40,5 @@
 
     </div>
 </body>
+
 </html>
