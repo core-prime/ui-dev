@@ -3,429 +3,612 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rojan Roy — UI/UX Designer & Graphic Designer. Creating thoughtful digital experiences through visual design and user-centered thinking." />
-  <title>Rojan Roy — Design Portfolio</title>
+  <meta name="description" content="Rojan Roy — UI/UX Designer & Graphic Designer. Crafting thoughtful digital products, brand identities, and user-centered design systems." />
+  <title>Rojan Roy — UI/UX & Graphic Designer</title>
 
-  <!-- Fonts -->
+  <!-- Typography: Cormorant Upright (Editorial Serif) + Manrope & Inter (Modern Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="theme-dark">
+
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow ambient-glow--top" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--bottom" aria-hidden="true"></div>
 
   <!-- ═══════════════════════════════════════════
-       SECTION 1: NAVIGATION
+       FLOATING GLASS NAVIGATION RAIL
        ═══════════════════════════════════════════ -->
-  <header class="nav" id="top">
-    <div class="nav__container">
-      <a href="#top" class="nav__logo" aria-label="Scroll to top">Rojan Roy</a>
-      <nav class="nav__links" id="navLinks" aria-label="Main navigation">
-        <a href="#projects" class="nav__link">Projects</a>
-        <a href="#resume" class="nav__link">Resume</a>
-        <a href="#about" class="nav__link">About</a>
-        <a href="#contact" class="nav__cta">Let's talk</a>
+  <header class="glass-nav" id="top">
+    <div class="glass-nav__dock">
+      <a href="#top" class="glass-nav__brand" aria-label="Rojan Roy - Scroll to top">
+        <span class="glass-nav__logo-dot"></span>
+        <span class="glass-nav__name">Rojan Roy</span>
+      </a>
+
+      <nav class="glass-nav__menu" id="navLinks" aria-label="Main navigation">
+        <a href="#works" class="glass-nav__link">Works</a>
+        <a href="#about" class="glass-nav__link">About</a>
+        <a href="#experience" class="glass-nav__link">Experience</a>
+        <a href="#skills" class="glass-nav__link">Skills</a>
+        <a href="#contact" class="glass-nav__cta">Let's talk</a>
       </nav>
-      <button class="nav__hamburger" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <button class="glass-nav__burger" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- ═══════════════════════════════════════════
-       SECTION 2: HERO
-       ═══════════════════════════════════════════ -->
-  <section class="hero">
-    <div class="hero__container">
-      <div class="hero__content">
-        <div class="hero__portrait">
-          <img src="assets/profile/profile.png" alt="Portrait of Rojan Roy" width="72" height="72" />
+  <main>
+    <!-- ═══════════════════════════════════════════
+         HERO SECTION
+         ═══════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="hero__container">
+        
+        <!-- Live Status Pill -->
+        <div class="hero__status-pill">
+          <span class="status-pulse"></span>
+          <span class="status-text">Available for UI/UX & Design Opportunities</span>
         </div>
-        <p class="hero__eyebrow">UI/UX DESIGNER & GRAPHIC DESIGNER</p>
-        <h1 class="hero__headline">
-          I'm Rojan Roy, a designer creating thoughtful digital experiences through visual design and user&#8209;centered&nbsp;thinking.
-        </h1>
-        <p class="hero__description">
-          With a background in graphic design and a growing focus on UI/UX, I bring visual clarity and curiosity to the process of designing meaningful digital&nbsp;products.
-        </p>
-        <div class="hero__social">
-          <a href="mailto:rojanroy694@gmail.com" class="hero__social-link" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-          </a>
-          <!-- Add LinkedIn, Behance, Dribbble links when URLs are provided -->
+
+        <div class="hero__grid">
+          <div class="hero__intro">
+            <p class="hero__eyebrow">UI/UX DESIGNER & GRAPHIC DESIGNER</p>
+            <h1 class="hero__headline">
+              Crafting <em class="serif-accent">thoughtful</em> digital experiences through visual clarity & user-centered thinking.
+            </h1>
+            <p class="hero__bio">
+              With a strong foundation in branding and visual communication, I translate complex problems into intuitive, elegant digital interfaces. Currently building end-to-end design systems while learning modern front-end web fundamentals.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#works" class="btn btn--primary">
+                Explore Selected Works
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m7 17 10-10M7 7h10v10"/></svg>
+              </a>
+              <a href="assets/Rojan_Roy_CV.pdf" download class="btn btn--ghost">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download CV
+              </a>
+              <div class="hero__social">
+                <a href="mailto:rojanroy694@gmail.com" class="social-icon" aria-label="Email Rojan Roy">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Portrait Card with Luxury Lighting -->
+          <div class="hero__visual">
+            <div class="portrait-card">
+              <div class="portrait-card__glow"></div>
+              <div class="portrait-card__frame">
+                <img src="assets/profile/profile.png" alt="Rojan Roy portrait" width="340" height="420" />
+              </div>
+              <div class="portrait-card__badge">
+                <span class="portrait-card__location">Thrissur, Kerala · India</span>
+                <span class="portrait-card__experience">2+ Years in Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Visual Teaser Strip -->
+        <div class="hero__strip">
+          <div class="hero__strip-item" data-project="quor">
+            <img src="assets/projects/quor-house-cards.png" alt="Quor House Coffee brand identity" loading="lazy" />
+            <div class="hero__strip-caption">
+              <span>01 / Brand Identity</span>
+              <strong>Quor House Roastery</strong>
+            </div>
+          </div>
+          <div class="hero__strip-item" data-project="nanora">
+            <img src="assets/projects/nanora-logo.png" alt="Nanora childcare UX project" loading="lazy" />
+            <div class="hero__strip-caption">
+              <span>02 / Product Concept</span>
+              <strong>Nanora Childcare</strong>
+            </div>
+          </div>
+          <div class="hero__strip-item" data-project="nexora">
+            <img src="assets/projects/nexora-travel-ui.png" alt="Nexora mobile app UI" loading="lazy" />
+            <div class="hero__strip-caption">
+              <span>03 / Mobile UI/UX</span>
+              <strong>Nexora Travel Planner</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         WORKS SECTION (INTERACTIVE SHOWCASE)
+         ═══════════════════════════════════════════ -->
+    <section class="works" id="works">
+      <div class="works__container">
+
+        <div class="works__header">
+          <div>
+            <span class="section-tag">PORTFOLIO</span>
+            <h2 class="section-title">Selected Works <span class="counter">(06)</span></h2>
+            <p class="section-desc">
+              Case studies spanning product design, user research, brand identity systems, and digital interfaces.
+            </p>
+          </div>
+
+          <!-- Filter Controls -->
+          <div class="works__filters" role="tablist" aria-label="Filter projects">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works</button>
+            <button class="filter-btn" data-filter="uiux" role="tab" aria-selected="false">UI/UX Design</button>
+            <button class="filter-btn" data-filter="branding" role="tab" aria-selected="false">Brand Identity</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="works__grid">
+
+          <!-- Project 1: Nanora -->
+          <article class="work-card" data-category="uiux" data-project="nanora">
+            <div class="work-card__media">
+              <img src="assets/projects/nanora-logo.png" alt="Nanora — Childcare & Early Learning Marketplace" loading="lazy" />
+              <div class="work-card__overlay">
+                <span class="work-card__action-btn">
+                  Read Case Study
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m7 17 10-10M7 7h10v10"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="work-card__content">
+              <div class="work-card__meta">
+                <span class="badge">UI/UX Design</span>
+                <span class="badge badge--ghost">Web & Mobile</span>
+                <span class="work-card__year">2026</span>
+              </div>
+              <h3 class="work-card__title">Nanora — Childcare & Early Learning Marketplace</h3>
+              <p class="work-card__desc">
+                A two-sided platform connecting families with verified nanny-tutors and specialized caregivers. Designed around UNICEF Early Childhood frameworks with trust-first information architecture.
+              </p>
+              <div class="work-card__tags">
+                <span>User Research</span> · <span>Information Architecture</span> · <span>12-Page Sitemap</span> · <span>Design System</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Nexora -->
+          <article class="work-card" data-category="uiux" data-project="nexora">
+            <div class="work-card__media work-card__media--dark">
+              <img src="assets/projects/nexora-travel-ui.png" alt="Nexora — All-in-One Life & Travel Planner" loading="lazy" />
+              <div class="work-card__overlay">
+                <span class="work-card__action-btn">
+                  Read Case Study
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m7 17 10-10M7 7h10v10"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="work-card__content">
+              <div class="work-card__meta">
+                <span class="badge">UI/UX Design</span>
+                <span class="badge badge--ghost">Mobile App</span>
+                <span class="work-card__year">2026</span>
+              </div>
+              <h3 class="work-card__title">Nexora — All-in-One Planner & Travel App</h3>
+              <p class="work-card__desc">
+                A multi-module productivity companion featuring an interactive countdown hero, budget trackers, and travel planning flows built on modern iOS design patterns.
+              </p>
+              <div class="work-card__tags">
+                <span>User Flows</span> · <span>Empathy Mapping</span> · <span>Figma Prototyping</span> · <span>Mobile UI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Dasandco -->
+          <article class="work-card" data-category="branding" data-project="dasandco">
+            <div class="work-card__media">
+              <img src="assets/projects/dasandco-brand.png" alt="Dasandco Luxury Footwear Brand Identity" loading="lazy" />
+              <div class="work-card__overlay">
+                <span class="work-card__action-btn">
+                  View Identity System
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m7 17 10-10M7 7h10v10"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="work-card__content">
+              <div class="work-card__meta">
+                <span class="badge">Brand Identity</span>
+                <span class="badge badge--ghost">Luxury Packaging</span>
+                <span class="work-card__year">2025</span>
+              </div>
+              <h3 class="work-card__title">Dasandco — Luxury Footwear & Packaging System</h3>
+              <p class="work-card__desc">
+                Complete brand guidelines and identity system featuring a gold shoe-monogram 'D', bespoke typography, matte black packaging with gold foil debossing, and store signage.
+              </p>
+              <div class="work-card__tags">
+                <span>Logo Monogram</span> · <span>Brand Guidelines</span> · <span>Packaging Design</span> · <span>Signage</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Quor House -->
+          <article class="work-card" data-category="branding" data-project="quor">
+            <div class="work-card__media">
+              <img src="assets/projects/quor-house-cup.png" alt="Quor House Coffee Roastery Brand" loading="lazy" />
+              <div class="work-card__overlay">
+                <span class="work-card__action-btn">
+                  View 360° Identity
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m7 17 10-10M7 7h10v10"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="work-card__content">
+              <div class="work-card__meta">
+                <span class="badge">Brand Identity</span>
+                <span class="badge badge--ghost">Packaging & 3D</span>
+                <span class="work-card__year">2024</span>
+              </div>
+              <h3 class="work-card__title">Quor House — Artisanal Coffee & Roastery Identity</h3>
+              <p class="work-card__desc">
+                Comprehensive 360° identity suite for an artisanal coffee house. Includes coffee bean monogram, stationery, kraft packaging, apparel, wooden A-frame signage, and iOS app icon.
+              </p>
+              <div class="work-card__tags">
+                <span>Visual Identity</span> · <span>Product Packaging</span> · <span>Merchandise</span> · <span>App Icon</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Royal Upholstery -->
+          <article class="work-card" data-category="branding" data-project="royal">
+            <div class="work-card__media">
+              <img src="assets/projects/royal-upholstery-sign.png" alt="Royal Upholstery Logo and Signage" loading="lazy" />
+              <div class="work-card__overlay">
+                <span class="work-card__action-btn">
+                  View Case
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m7 17 10-10M7 7h10v10"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="work-card__content">
+              <div class="work-card__meta">
+                <span class="badge">Brand Identity</span>
+                <span class="badge badge--ghost">Signage & Monogram</span>
+                <span class="work-card__year">2024</span>
+              </div>
+              <h3 class="work-card__title">Royal Upholstery — Negative Space Identity</h3>
+              <p class="work-card__desc">
+                Conceptual ligature logo marrying a needle, looping thread, and tailoring shears into an elegant monogram 'RU' for a bespoke furniture crafting studio.
+              </p>
+              <div class="work-card__tags">
+                <span>Logo Design</span> · <span>Negative Space</span> · <span>Blade Signage</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Tailor Monogram -->
+          <article class="work-card" data-category="branding" data-project="tailor">
+            <div class="work-card__media">
+              <img src="assets/projects/tailor-x-logo.png" alt="Letterpress Fashion Monogram" loading="lazy" />
+              <div class="work-card__overlay">
+                <span class="work-card__action-btn">
+                  View Case
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m7 17 10-10M7 7h10v10"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="work-card__content">
+              <div class="work-card__meta">
+                <span class="badge">Graphic Design</span>
+                <span class="badge badge--ghost">Print & Letterpress</span>
+                <span class="work-card__year">2024</span>
+              </div>
+              <h3 class="work-card__title">Fashion Monogram — Measuring Tape Letterpress</h3>
+              <p class="work-card__desc">
+                Minimalist monogram transforming a flexible measuring tape into letterform geometry, rendered as a tactile deboss on textured cotton paper.
+              </p>
+              <div class="work-card__tags">
+                <span>Monogram</span> · <span>Print Craft</span> · <span>Minimalism</span>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
-      <div class="hero__images">
-        <a href="#project-quor" class="hero__image-tile hero__image-tile--wide">
-          <img src="assets/projects/quor-house-cards.png" alt="Quor House brand identity — business card mockup" loading="lazy" />
-        </a>
-        <a href="#project-nanora" class="hero__image-tile hero__image-tile--medium">
-          <img src="assets/projects/nanora-logo.png" alt="Nanora childcare platform logo" loading="lazy" />
-        </a>
-        <a href="#project-dasandco" class="hero__image-tile hero__image-tile--narrow">
-          <img src="assets/projects/dasandco-brand.png" alt="Dasandco luxury footwear brand identity" loading="lazy" />
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════
-       SECTION 3: SELECTED PROJECTS
-       ═══════════════════════════════════════════ -->
-  <section class="projects" id="projects">
-    <div class="projects__container">
-      <div class="projects__header">
-        <h2 class="projects__heading">Selected projects</h2>
-        <p class="projects__description">
-          A selection of my design work, exploring visual communication, user experience, and thoughtful digital interfaces.
-        </p>
-      </div>
-      <div class="projects__grid">
+    <!-- ═══════════════════════════════════════════
+         DESIGN PHILOSOPHY & ABOUT SECTION
+         ═══════════════════════════════════════════ -->
+    <section class="about" id="about">
+      <div class="about__container">
+        
+        <div class="about__grid">
+          <div class="about__statement">
+            <span class="section-tag">ABOUT & APPROACH</span>
+            <h2 class="about__heading">
+              "Great interfaces are born at the intersection of <em class="serif-accent">visual craft</em> and <em class="serif-accent">human empathy</em>."
+            </h2>
+            <div class="about__text">
+              <p>
+                My design journey began in graphic design, animation, and brand development, where I honed my intuition for typography, layout discipline, and composition. As I transition into UI/UX design, I combine that visual sensitivity with user research methodologies, information architecture, and responsive front-end fundamentals.
+              </p>
+              <p>
+                Whether designing a luxury brand identity or a complex marketplace user flow, my focus remains constant: eliminate friction, celebrate clarity, and craft digital experiences that feel both intuitive and memorable.
+              </p>
+            </div>
+          </div>
 
-        <!-- Project 1: Nanora -->
-        <article class="project-card" id="project-nanora">
-          <a href="#case-nanora" class="project-card__link">
-            <div class="project-card__image">
-              <img src="assets/projects/nanora-logo.png" alt="Nanora — Childcare & early learning marketplace concept" loading="lazy" />
+          <!-- Approach Cards -->
+          <div class="about__pillars">
+            <div class="pillar-card">
+              <span class="pillar-card__num">01</span>
+              <h3 class="pillar-card__title">Understand & Empathize</h3>
+              <p class="pillar-card__desc">
+                Deep dive into user pain points through empathy maps, user journeys, and contextual research before touching pixels.
+              </p>
             </div>
-            <div class="project-card__info">
-              <h3 class="project-card__title">Nanora</h3>
-              <p class="project-card__category">UI/UX Design · Concept Project</p>
-              <p class="project-card__desc">A two-sided childcare marketplace connecting families with vetted caregivers, designed around trust, clarity, and meaningful care experiences.</p>
-              <span class="project-card__cta">View case study →</span>
-            </div>
-          </a>
-        </article>
 
-        <!-- Project 2: Nexora -->
-        <article class="project-card" id="project-nexora">
-          <a href="#case-nexora" class="project-card__link">
-            <div class="project-card__image">
-              <img src="assets/projects/nexora-travel-ui.png" alt="Nexora — All-in-one planner app UI design" loading="lazy" />
+            <div class="pillar-card">
+              <span class="pillar-card__num">02</span>
+              <h3 class="pillar-card__title">Structure & Systematize</h3>
+              <p class="pillar-card__desc">
+                Architect intuitive information hierarchies, clear screen flows, and repeatable design tokens that scale gracefully.
+              </p>
             </div>
-            <div class="project-card__info">
-              <h3 class="project-card__title">Nexora</h3>
-              <p class="project-card__category">UI/UX Design · Group Project</p>
-              <p class="project-card__desc">An all-in-one planning ecosystem for tasks, habits, schedules, and travel, featuring user research, personas, and high-fidelity mobile UI.</p>
-              <span class="project-card__cta">View case study →</span>
-            </div>
-          </a>
-        </article>
 
-        <!-- Project 3: Dasandco -->
-        <article class="project-card" id="project-dasandco">
-          <a href="#case-dasandco" class="project-card__link">
-            <div class="project-card__image">
-              <img src="assets/projects/dasandco-brand.png" alt="Dasandco — Luxury footwear brand identity system" loading="lazy" />
+            <div class="pillar-card">
+              <span class="pillar-card__num">03</span>
+              <h3 class="pillar-card__title">Craft & Refine</h3>
+              <p class="pillar-card__desc">
+                Execute high-fidelity UI with meticulous attention to typography scale, spacing grids, micro-interactions, and accessibility.
+              </p>
             </div>
-            <div class="project-card__info">
-              <h3 class="project-card__title">Dasandco</h3>
-              <p class="project-card__category">Brand Identity · Graphic Design</p>
-              <p class="project-card__desc">A premium luxury footwear brand identity featuring a gold monogram, refined typography, packaging design, and complete brand guidelines.</p>
-              <span class="project-card__cta">View case study →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- Project 4: Quor House -->
-        <article class="project-card" id="project-quor">
-          <a href="#case-quor" class="project-card__link">
-            <div class="project-card__image">
-              <img src="assets/projects/quor-house-cup.png" alt="Quor House — Coffee brand identity and packaging" loading="lazy" />
-            </div>
-            <div class="project-card__info">
-              <h3 class="project-card__title">Quor House</h3>
-              <p class="project-card__category">Brand Identity · Packaging Design</p>
-              <p class="project-card__desc">A 360-degree brand identity for an artisanal coffee roastery, including logo, stationery, packaging, merchandise, signage, and app icon design.</p>
-              <span class="project-card__cta">View case study →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- Project 5: Royal Upholstery -->
-        <article class="project-card" id="project-ru">
-          <a href="#case-ru" class="project-card__link">
-            <div class="project-card__image">
-              <img src="assets/projects/royal-upholstery-sign.png" alt="Royal Upholstery — Logo and signage design" loading="lazy" />
-            </div>
-            <div class="project-card__info">
-              <h3 class="project-card__title">Royal Upholstery</h3>
-              <p class="project-card__category">Logo Design · Visual Identity</p>
-              <p class="project-card__desc">A conceptual logo combining a sewing needle, thread, and scissors into a clever negative-space monogram for a bespoke upholstery studio.</p>
-              <span class="project-card__cta">View case study →</span>
-            </div>
-          </a>
-        </article>
-
-        <!-- Project 6: Tailor X -->
-        <article class="project-card" id="project-tailor">
-          <a href="#case-tailor" class="project-card__link">
-            <div class="project-card__image">
-              <img src="assets/projects/tailor-x-logo.png" alt="Tailor monogram — Letterpress logo design" loading="lazy" />
-            </div>
-            <div class="project-card__info">
-              <h3 class="project-card__title">Fashion Monogram</h3>
-              <p class="project-card__category">Logo Design · Graphic Design</p>
-              <p class="project-card__desc">A minimalist monogram where a tailor's measuring tape forms the letter, rendered as a tactile letterpress emboss on textured craft paper.</p>
-              <span class="project-card__cta">View case study →</span>
-            </div>
-          </a>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       SECTION 4: FEATURED PROJECT
-       ═══════════════════════════════════════════ -->
-  <section class="featured">
-    <div class="featured__container">
-      <div class="featured__text">
-        <p class="featured__eyebrow">FEATURED PROJECT</p>
-        <h2 class="featured__title">A closer look at my design process</h2>
-        <p class="featured__description">
-          Explore the Nanora project — a childcare marketplace concept where I applied UX research, information architecture, and visual design to create a trust-centered platform for families and caregivers.
-        </p>
-        <a href="#case-nanora" class="featured__cta">Explore project →</a>
-      </div>
-      <div class="featured__visual">
-        <img src="assets/projects/nexora-travel-ui.png" alt="Nexora mobile app — Travel planner high-fidelity UI screen" loading="lazy" />
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       SECTION 5: DESIGN APPROACH
-       ═══════════════════════════════════════════ -->
-  <section class="approach" id="about">
-    <div class="approach__container">
-      <div class="approach__header">
-        <h2 class="approach__heading">How I approach design</h2>
-        <p class="approach__description">
-          My background in graphic design shapes how I approach typography, composition, and visual consistency. As I grow in UI/UX, I am building on that foundation with user research, structured problem-solving, and thoughtful interface design.
-        </p>
-      </div>
-      <div class="approach__cards">
-        <div class="approach__card">
-          <span class="approach__card-number">01</span>
-          <h3 class="approach__card-title">Understand</h3>
-          <p class="approach__card-desc">
-            Learn about user needs, goals, and challenges before exploring potential solutions.
-          </p>
+          </div>
         </div>
-        <div class="approach__card">
-          <span class="approach__card-number">02</span>
-          <h3 class="approach__card-title">Structure</h3>
-          <p class="approach__card-desc">
-            Organize information, user flows, and interface elements into clear, intuitive experiences.
-          </p>
-        </div>
-        <div class="approach__card">
-          <span class="approach__card-number">03</span>
-          <h3 class="approach__card-title">Design</h3>
-          <p class="approach__card-desc">
-            Combine visual hierarchy, typography, and interface patterns to create cohesive digital experiences.
-          </p>
-        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════
-       SECTION 6: EXPERIENCE & SKILLS
-       ═══════════════════════════════════════════ -->
-  <section class="experience" id="resume">
-    <div class="experience__container">
+    <!-- ═══════════════════════════════════════════
+         EXPERIENCE & RESUME SECTION
+         ═══════════════════════════════════════════ -->
+    <section class="experience" id="experience">
+      <div class="experience__container">
 
-      <!-- Experience Timeline -->
-      <div class="experience__block">
-        <h2 class="experience__heading">Experience & background</h2>
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__date">Sep 2024 – Dec 2025</div>
-            <div class="timeline__content">
-              <h3 class="timeline__role">Senior Graphic Designer</h3>
-              <p class="timeline__company">Junaix · Bangalore, Karnataka</p>
-              <ul class="timeline__list">
-                <li>Created social media creatives, promotional graphics, and visual communication assets for business needs.</li>
-                <li>Maintained consistent layout, typography, and brand presentation across design materials.</li>
+        <div class="section-header">
+          <span class="section-tag">BACKGROUND</span>
+          <h2 class="section-title">Experience & Journey</h2>
+          <p class="section-desc">Verified employment history and academic foundation.</p>
+        </div>
+
+        <div class="timeline-glass">
+          
+          <!-- Experience 1 -->
+          <div class="timeline-row">
+            <div class="timeline-row__meta">
+              <span class="timeline-date">Sep 2024 – Dec 2025</span>
+              <span class="timeline-loc">Bangalore, Karnataka</span>
+            </div>
+            <div class="timeline-row__body">
+              <div class="timeline-row__header">
+                <h3 class="timeline-role">Senior Graphic Designer</h3>
+                <span class="timeline-company">Junaix</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Created high-impact social media creatives, digital campaign graphics, and business marketing assets.</li>
+                <li>Maintained layout consistency, typographic standards, and brand presentation across cross-platform media.</li>
+                <li>Collaborated closely with marketing stakeholders to translate business goals into engaging visual communication.</li>
               </ul>
             </div>
           </div>
-          <div class="timeline__item">
-            <div class="timeline__date">Aug 2023 – Sep 2024</div>
-            <div class="timeline__content">
-              <h3 class="timeline__role">Graphic Designer</h3>
-              <p class="timeline__company">Course Connect · Bangalore, Karnataka</p>
-              <ul class="timeline__list">
-                <li>Designed digital marketing and social media materials to support brand and campaign communication.</li>
-                <li>Applied visual hierarchy, composition, and brand consistency across creative outputs.</li>
+
+          <!-- Experience 2 -->
+          <div class="timeline-row">
+            <div class="timeline-row__meta">
+              <span class="timeline-date">Aug 2023 – Sep 2024</span>
+              <span class="timeline-loc">Bangalore, Karnataka</span>
+            </div>
+            <div class="timeline-row__body">
+              <div class="timeline-row__header">
+                <h3 class="timeline-role">Graphic Designer</h3>
+                <span class="timeline-company">Course Connect</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Designed digital marketing collateral, social media banners, and campaign creatives to support brand outreach.</li>
+                <li>Applied visual hierarchy, color harmony, and composition to strengthen brand recall and engagement.</li>
               </ul>
             </div>
           </div>
+
+          <!-- Education 1 -->
+          <div class="timeline-row timeline-row--edu">
+            <div class="timeline-row__meta">
+              <span class="timeline-date">In Progress · Nov 2026</span>
+              <span class="timeline-loc">Professional Certification</span>
+            </div>
+            <div class="timeline-row__body">
+              <div class="timeline-row__header">
+                <h3 class="timeline-role">UI/UX Design & Website Development</h3>
+                <span class="timeline-company">Design & Code Bootcamp</span>
+              </div>
+              <p class="timeline-summary">
+                Hands-on training in user research, wireframing, interactive prototyping, design systems, and responsive web technologies (HTML, CSS, JavaScript).
+              </p>
+            </div>
+          </div>
+
+          <!-- Education 2 -->
+          <div class="timeline-row timeline-row--edu">
+            <div class="timeline-row__meta">
+              <span class="timeline-date">2020 – 2023</span>
+              <span class="timeline-loc">Kerala, India</span>
+            </div>
+            <div class="timeline-row__body">
+              <div class="timeline-row__header">
+                <h3 class="timeline-role">Bachelor of Arts (BA) — Graphic Design & Animation</h3>
+                <span class="timeline-company">University of Calicut · Chetana College of Media and Performing Arts</span>
+              </div>
+              <p class="timeline-summary">
+                Comprehensive academic grounding in visual art principles, graphic design theory, typography, digital illustration, and animation.
+              </p>
+            </div>
+          </div>
+
         </div>
 
-        <!-- Education -->
-        <h3 class="experience__subheading">Education</h3>
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__date">In progress · Expected Nov 2026</div>
-            <div class="timeline__content">
-              <h3 class="timeline__role">UI/UX Design & Website Development</h3>
-              <p class="timeline__company">Currently building skills in user research, wireframing, and front-end development</p>
-            </div>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__date">2020 – 2023</div>
-            <div class="timeline__content">
-              <h3 class="timeline__role">Bachelor of Arts — Graphic Design & Animation</h3>
-              <p class="timeline__company">University of Calicut · Chetana College of Media and Performing Arts</p>
-            </div>
-          </div>
-        </div>
       </div>
+    </section>
 
-      <!-- Skills Grid -->
-      <div class="skills__block">
-        <h2 class="experience__heading">Skills & tools</h2>
-        <div class="skills__grid">
-          <div class="skills__group">
-            <h4 class="skills__group-title">UI/UX Design</h4>
-            <ul class="skills__list">
-              <li>Wireframing & UI design</li>
-              <li>User flows & information architecture</li>
-              <li>User personas & empathy maps</li>
-              <li>User journey mapping</li>
-              <li>Card sorting</li>
-              <li>Visual hierarchy & typography</li>
+    <!-- ═══════════════════════════════════════════
+         SKILLS & TOOLKIT SECTION
+         ═══════════════════════════════════════════ -->
+    <section class="skills" id="skills">
+      <div class="skills__container">
+
+        <div class="section-header">
+          <span class="section-tag">CAPABILITIES</span>
+          <h2 class="section-title">Skills & Toolstack</h2>
+        </div>
+
+        <div class="skills__matrix">
+          
+          <div class="skill-category">
+            <h3 class="skill-category__title">
+              <span class="cat-dot"></span> UI/UX Design
+            </h3>
+            <ul class="skill-tags">
+              <li>Wireframing</li>
+              <li>User Flows</li>
+              <li>Information Architecture</li>
+              <li>User Personas</li>
+              <li>Empathy Mapping</li>
+              <li>User Journey Mapping</li>
+              <li>Card Sorting</li>
+              <li>Visual Hierarchy</li>
+              <li>Design Systems</li>
             </ul>
           </div>
-          <div class="skills__group">
-            <h4 class="skills__group-title">Graphic Design</h4>
-            <ul class="skills__list">
-              <li>Branding</li>
-              <li>Logo design</li>
-              <li>Illustrations</li>
-              <li>Social media design</li>
-              <li>Packaging design</li>
-              <li>Print & collateral</li>
+
+          <div class="skill-category">
+            <h3 class="skill-category__title">
+              <span class="cat-dot"></span> Graphic & Brand Design
+            </h3>
+            <ul class="skill-tags">
+              <li>Brand Identity Systems</li>
+              <li>Logo Design & Monograms</li>
+              <li>Digital Illustration</li>
+              <li>Packaging & 3D Mockups</li>
+              <li>Social Media Creatives</li>
+              <li>Print & Typography</li>
             </ul>
           </div>
-          <div class="skills__group">
-            <h4 class="skills__group-title">Design Tools</h4>
-            <ul class="skills__list">
+
+          <div class="skill-category">
+            <h3 class="skill-category__title">
+              <span class="cat-dot"></span> Software & Tools
+            </h3>
+            <ul class="skill-tags">
               <li>Figma</li>
               <li>Miro</li>
               <li>Adobe Photoshop</li>
               <li>Adobe Illustrator</li>
               <li>Adobe InDesign</li>
               <li>Canva</li>
+              <li>VS Code</li>
             </ul>
           </div>
-          <div class="skills__group">
-            <h4 class="skills__group-title">Development</h4>
-            <ul class="skills__list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
+
+          <div class="skill-category">
+            <h3 class="skill-category__title">
+              <span class="cat-dot"></span> Web Fundamentals
+            </h3>
+            <ul class="skill-tags">
+              <li>HTML5 Semantic Markup</li>
+              <li>CSS3 / Flexbox & Grid</li>
+              <li>Responsive Layouts</li>
+              <li>JavaScript Essentials</li>
             </ul>
-            <p class="skills__note">Foundational skills — currently learning</p>
+            <span class="skill-badge-note">Currently learning to bridge design & code</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT CTA SECTION
+         ═══════════════════════════════════════════ -->
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        
+        <div class="contact__box">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2 class="contact__title">
+            Have a project in mind, or looking for a <em class="serif-accent">dedicated designer</em>?
+          </h2>
+          <p class="contact__desc">
+            I am currently open to full-time roles, freelance collaborations, and UI/UX design challenges. Let's create something meaningful together.
+          </p>
+
+          <div class="contact__btns">
+            <a href="mailto:rojanroy694@gmail.com" class="btn btn--primary btn--large">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              Email Me directly
+            </a>
+            <a href="assets/Rojan_Roy_CV.pdf" download class="btn btn--ghost btn--large">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Full Resume
+            </a>
+          </div>
+
+          <div class="contact__direct-info">
+            <span>📧 rojanroy694@gmail.com</span>
+            <span>📍 Thrissur, Kerala, India</span>
+            <span>💬 English · Malayalam · Hindi · Tamil</span>
           </div>
         </div>
-      </div>
 
-      <!-- Resume Download -->
-      <div class="resume-download">
-        <div class="resume-download__content">
-          <h3 class="resume-download__heading">Want to know more?</h3>
-          <p class="resume-download__desc">Explore my experience, skills, and design background in my resume.</p>
-        </div>
-        <a href="assets/Rojan_Roy_CV.pdf" download class="resume-download__btn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download CV
-        </a>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- ═══════════════════════════════════════════
-       SECTION 7: WHAT I BRING
-       ═══════════════════════════════════════════ -->
-  <section class="strengths">
-    <div class="strengths__container">
-      <h2 class="strengths__heading">What I bring to a project</h2>
-      <div class="strengths__grid">
-        <div class="strengths__item">
-          <h3 class="strengths__title">Visual Precision</h3>
-          <p class="strengths__desc">A trained eye for typography, layout, and composition, developed through years of graphic design work.</p>
-        </div>
-        <div class="strengths__item">
-          <h3 class="strengths__title">User-Centered Focus</h3>
-          <p class="strengths__desc">Growing expertise in user research, personas, and journey mapping to ensure designs serve real needs.</p>
-        </div>
-        <div class="strengths__item">
-          <h3 class="strengths__title">Brand Consistency</h3>
-          <p class="strengths__desc">Experience maintaining cohesive visual systems across digital and print touchpoints.</p>
-        </div>
-        <div class="strengths__item">
-          <h3 class="strengths__title">Continuous Learning</h3>
-          <p class="strengths__desc">Actively expanding skills in UI/UX design, front-end development, and design thinking methodologies.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       SECTION 8: CONTACT CTA
-       ═══════════════════════════════════════════ -->
-  <section class="contact" id="contact">
-    <div class="contact__container">
-      <h2 class="contact__heading">Interested in working together?</h2>
-      <p class="contact__description">
-        Have a project in mind, need a designer, or want to collaborate? I'd love to hear from you.
-      </p>
-      <div class="contact__actions">
-        <a href="mailto:rojanroy694@gmail.com" class="contact__btn contact__btn--primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-          Email me
-        </a>
-        <!-- Uncomment when LinkedIn URL is provided:
-        <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" class="contact__btn contact__btn--secondary">
-          Connect on LinkedIn
-        </a>
-        -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════
-       SECTION 9: FOOTER
+       FOOTER
        ═══════════════════════════════════════════ -->
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__brand">
-        <p class="footer__name">Rojan Roy</p>
-        <p class="footer__subtitle">UI/UX Designer & Graphic Designer</p>
+        <span class="footer__name">Rojan Roy</span>
+        <span class="footer__role">UI/UX Designer & Graphic Designer</span>
       </div>
-      <nav class="footer__nav" aria-label="Footer navigation">
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
+
+      <nav class="footer__nav" aria-label="Footer links">
+        <a href="#works">Works</a>
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-      <div class="footer__social">
-        <a href="mailto:rojanroy694@gmail.com" aria-label="Email Rojan Roy">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-        </a>
+
+      <div class="footer__copy">
+        <span id="footerYear">© 2026</span> Rojan Roy. Built with passion & precision.
       </div>
-      <p class="footer__copyright"></p>
     </div>
   </footer>
+
+  <!-- ═══════════════════════════════════════════
+       INTERACTIVE IN-PAGE CASE STUDY DRAWER
+       ═══════════════════════════════════════════ -->
+  <div class="case-drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="case-drawer" id="caseDrawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="case-drawer__close" id="drawerClose" aria-label="Close case study drawer">✕</button>
+    <div class="case-drawer__inner" id="drawerContent">
+      <!-- Dynamic Case Study Content Populated by JS -->
+    </div>
+  </aside>
 
   <script src="script.js"></script>
 </body>
