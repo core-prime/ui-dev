@@ -3,80 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TecStore - Smart Watch Pro</title>
     <style>
-        *{
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        .header{
+
+        .header {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             background-color: black;
             color: white;
-            align-items: center;
-            height: 100px;
-            
-
+            height: 80px;
+            padding: 0 5%;
         }
-        ul{
-            
+
+        ul {
             display: flex;
-            gap: 34px;
+            gap: 30px;
             list-style-type: none;
             text-transform: uppercase;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: white;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
         }
+
+        a:hover {
+            color: #38bdf8;
+        }
+
         .hero {
             display: flex;
-              margin-top: 5%;
-              margin-left: 5%;
+            justify-content: space-around;
+            align-items: center;
+            min-height: calc(100vh - 80px);
+            padding: 0 5%;
         }
-        .right{
-            margin-left: 32%;
-           img { border-radius: 7px;}
-           animation: move 5s ease infinite alternate;
-           transition: 1s ease;
-          
-        }
-        
-        @keyframes move {
-            0%,100% {
-                transform: translateY(0);
 
+        .left {
+            max-width: 500px;
+        }
+
+        .left h1 {
+            font-size: 2.8rem;
+            text-transform: capitalize;
+            margin-bottom: 16px;
+        }
+
+        .left p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .left button {
+            padding: 12px 28px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            text-transform: capitalize;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .left button:hover {
+            background-color: #333;
+        }
+
+        .right img {
+            border-radius: 12px;
+            display: block;
+            animation: float 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
             }
-            50%{
-                transform: translateY(-50px);
+            100% {
+                transform: translateY(-25px);
             }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1 style="margin-left: 3%;">TecStore</h1>
-        <ul style="margin-right: 3%;">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Product</a></li>
-            <li><a href="">Contact</a></li>
+    <header class="header">
+        <h1>TecStore</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
+    </header>
 
-    </div>
-    <div class="hero"> 
-        <div class="left"><h1>smart watch pro</h1>
-            <p>stay conncted, track your fitness, and manage your daily tasks...</p>
-            <button>buy now</button>
+    <main class="hero"> 
+        <div class="left">
+            <h1>smart watch pro</h1>
+            <p>Stay connected, track your fitness, and manage your daily tasks...</p>
+            <button>Buy Now</button>
         </div>
         <div class="right">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQawPCTOIj-wwlSVLDoUY_-ehlh5YI53E3xH2ypZpk2gw&s=10" alt="image" width="300">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQawPCTOIj-wwlSVLDoUY_-ehlh5YI53E3xH2ypZpk2gw&s=10" alt="Smart Watch Pro" width="300">
         </div>
-    </div>
-
-
-    <div>
-
-    </div>
+    </main>
 </body>
 </html>
