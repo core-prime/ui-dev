@@ -1,3 +1,4 @@
+// Arithmetic Operators
 let a = 10, b = 3;
 console.log(a + b); // 13
 console.log(a - b); // 7
@@ -15,7 +16,7 @@ console.log(x *= 2);  // x = x * 2
 console.log(x /= 2);  // x = x / 2
 
 
-// //comp
+// //comparison
 let g=10
 let f="10"
 
@@ -36,4 +37,20 @@ console.log("||", true||true); // true
 console.log("||", true||false); // true
 console.log("||", false||false); // false
 console.log("!", true!=false); // true
+
+//incre/decre
+let m = 5;
+
+console.log("++m", ++m); // 6
+console.log(m++); // 6, but m becomes 7
+
+console.log("m++", m++); // 7, but m becomes 8
+console.log("m++", m++); // 8, but m becomes 9
+
+
+console.log("m", m--); // 7, but m becomes 6
+console.log("--m", --m); // 5
+
+// console.log("m--", m--); // 6, but m becomes 5
+// console.log("m--", m--); // 5, but m becomes 4
 
