@@ -51,3 +51,25 @@ if (mark >= 90) {
 } else {
     console.log("Fail");
 }
+
+// ternary ? left(true):right(false)
+let result = (age >= 18) ? "Adult" : "Minor";
+console.log(result);
+
+// if else if
+// if () else if () else
+let mark = 15;
+
+
+
+let day = "Monday";
+switch (day) {
+    case "Monday": console.log("Day is monday");
+        break;
+    case "Tuesday": console.log("Day is tuesday");
+        break;
+    case "Wednesday": console.log("Day is wednesday");
+        break;
+    default:
+        console.log("invalid");
+}
