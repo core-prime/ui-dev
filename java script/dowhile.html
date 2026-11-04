@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM Balance</title>
+</head>
+<body>
+
+<h2>ATM System</h2>
+<p>Open the browser console (F12) to see results.</p>
+
+<script>
+let balance = 1000;
+let choice;
+
+console.log("Welcome to the ATM!");
+
+do {
+    choice = Number(
+        prompt(
+            "ATM Menu:\n" +
+            "1. Check Balance\n" +
+            "2. Deposit\n" +
+            "3. Withdraw\n" +
+            "4. Exit"
+        )
+    );
+
+    switch (choice) {
+
+        case 1:
+            console.log("Current Balance: ₹" + balance);
+            break;
+
+        case 2:
+            let deposit = Number(prompt("Enter deposit amount:"));
+
+            if (deposit > 0 && Number.isFinite(deposit)) {
+                balance += deposit;
+                console.log("₹" + deposit + " deposited.");
+                console.log("New Balance: ₹" + balance);
+            } else {
+                console.log("Invalid deposit amount.");
+            }
+            break;
+
+        case 3:
+            let withdraw = Number(prompt("Enter withdraw amount:"));
+
+            if (withdraw <= 0 || !Number.isFinite(withdraw)) {
+                console.log("Invalid withdrawal amount.");
+            } else if (withdraw <= balance) {
+                balance -= withdraw;
+                console.log("₹" + withdraw + " withdrawn.");
+                console.log("New Balance: ₹" + balance);
+            } else {
+                console.log("Insufficient funds.");
+            }
+            break;
+
+        case 4:
+            console.log("Thank you for using the ATM. Goodbye!");
+            break;
+
+        default:
+            console.log("Invalid choice. Please try again.");
+    }
+
+} while (choice !== 4);
+
+</script>
+</body>
+</html>
