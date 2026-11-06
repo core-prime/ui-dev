@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering System</title>
+</head>
+<body>
+
+    <h1>Welcome to the Food Ordering System</h1>
+
+    
+    <script>
+        let choice;
+        let totalBill = 0;
+
+        do {
+            choice = Number(
+                prompt(
+                    "Food Ordering System:\n\n" +
+                    "1. Burger - ₹100\n" +
+                    "2. Pizza - ₹200\n" +
+                    "3. Sandwich - ₹80\n" +
+                    "4. Exit\n\n" +
+                    "Enter your choice (1-4):"
+                )
+            );
+
+            switch (choice) {
+                case 1:
+                    totalBill += 100;
+                    console.log("Added Burger to your order. (Price: ₹100)");
+                    alert("Added Burger (₹100)");
+                    break;
+
+                case 2:
+                    totalBill += 200;
+                    console.log("Added Pizza to your order. (Price: ₹200)");
+                    alert("Added Pizza (₹200)");
+                    break;
+
+                case 3:
+                    totalBill += 80;
+                    console.log("Added Sandwich to your order. (Price: ₹80)");
+                    alert("Added Sandwich (₹80)");
+                    break;
+
+                case 4:
+                    console.log("Thank you for ordering!");
+                    console.log("Your Final Total Bill is: ₹" + totalBill);
+                    alert("Thank you for ordering! Your Final Total Bill is: ₹" + totalBill);
+                    break;
+
+                default:
+                    console.log("Invalid choice! Please select a valid option from 1 to 4.");
+                    alert("Invalid choice! Please select a valid option from 1 to 4.");
+            }
+        } while (choice !== 4);
+    </script>
+
+</body>
+</html>
