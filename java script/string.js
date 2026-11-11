@@ -10,7 +10,7 @@ console.log("Lowercase", name2.toLowerCase());
 
 
 
-let text = "Hello world";
+let text = "   Hello world";
 console.log(text);
 console.log("Trim", text.trim());
 
