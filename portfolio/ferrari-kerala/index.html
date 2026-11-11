@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An independent, futuristic portfolio concept imagining the Ferrari 296 GTB experience in Kerala.">
+  <meta name="theme-color" content="#080e0a">
+  <title>Ferrari Kerala — Futuristic 296 GTB Concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=JetBrains+Mono:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading" data-drive-mode="hybrid">
+  <!-- Custom Cyber Cursor -->
+  <div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+  <div class="cursor-trail" id="cursor-trail" aria-hidden="true"></div>
+
+  <!-- Ambient Sound Waves Visualizer & Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__tech-grid" aria-hidden="true"></div>
+    <div class="preloader__logo">
+      <div class="preloader__hud-ring"></div>
+      <span class="brand__monogram">F<span>/</span>K</span>
+      <span class="brand__name">KERALA · CONCEPT 296</span>
+      <div class="preloader__status">
+        <span class="preloader__status-text" id="preloader-text">INITIALIZING TELEMETRY...</span>
+        <div class="preloader__bar"><div class="preloader__bar-fill" id="preloader-bar"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="concept-note">
+    <span class="hud-tag"><i class="hud-dot"></i> LIVE SPEC</span>
+    <span data-en="Independent portfolio concept by Rojan Roy" data-ml="റോജൻ റോയിയുടെ സ്വതന്ത്ര പോർട്ട്ഫോളിയോ ആശയം">Independent portfolio concept by Rojan Roy</span>
+    <span class="concept-note__divider">/</span>
+    <span data-en="Thrissur, Kerala · Not affiliated with Ferrari S.p.A." data-ml="തൃശ്ശൂർ, കേരളം · ഫെറാരിയുമായി നേരിട്ട് ബന്ധമില്ല">Thrissur, Kerala · Not affiliated with Ferrari S.p.A.</span>
+    <div class="concept-note__coords">10°31' N &nbsp;·&nbsp; 76°13' E</div>
+  </div>
+
+  <header class="header">
+    <button class="header-action menu-button" id="menu-button" aria-expanded="false" aria-controls="site-menu">
+      <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      <span data-en="HUD MENU" data-ml="മെനു">HUD MENU</span>
+    </button>
+
+    <a class="brand" href="#home" aria-label="Ferrari Kerala concept home">
+      <span class="brand__monogram">F<span>/</span>K</span>
+      <span class="brand__name">KERALA · 296 GTB</span>
+    </a>
+
+    <div class="header-right">
+      <button class="header-action audio-toggle" id="audio-toggle" aria-label="Toggle telemetry sound fx" title="Toggle Interactive Audio Engine">
+        <span class="audio-waves" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </span>
+        <span class="audio-label" data-en="AUDIO : OFF" data-ml="ശബ്ദം : ഓഫ്">AUDIO : OFF</span>
+      </button>
+
+      <button class="header-action language-button" id="language-button" aria-label="Switch to Malayalam">മലയാളം</button>
+    </div>
+  </header>
+
+  <!-- Fullscreen HUD Menu Drawer (Fixed to Body) -->
+  <nav class="menu-panel" id="site-menu" aria-label="Main navigation">
+    <div class="menu-panel__corner-reticle" aria-hidden="true"></div>
+    <span class="menu-panel__eyebrow" data-en="System Telemetry & Architecture" data-ml="സിസ്റ്റം നാവിഗേഷൻ">System Telemetry & Architecture</span>
+    <a href="#model"><span>01</span><span data-en="Virtual Inspection Bay" data-ml="വെർച്വൽ വെഹിക്കിൾ ബേ">Virtual Inspection Bay</span><span class="nav-arrow">↗</span></a>
+    <a href="#telemetry"><span>02</span><span data-en="Kinetic Telemetry" data-ml="ടെലിമെട്രി ഡാറ്റ">Kinetic Telemetry</span><span class="nav-arrow">↗</span></a>
+    <a href="#experience"><span>03</span><span data-en="Kerala Immersion" data-ml="കേരളാ അനുഭവം">Kerala Immersion</span><span class="nav-arrow">↗</span></a>
+    <a href="#about"><span>04</span><span data-en="Mission & Concept" data-ml="ആശയ വിവരണം">Mission & Concept</span><span class="nav-arrow">↗</span></a>
+    
+    <div class="menu-panel__footer">
+      <div class="menu-panel__stat">
+        <small data-en="POWER RATIO" data-ml="പവർ അനുപാതം">POWER RATIO</small>
+        <strong>1.77 KG/CV</strong>
+      </div>
+      <div class="menu-panel__stat">
+        <small data-en="LATITUDE/LONGITUDE" data-ml="ലൊക്കേഷൻ">LATITUDE/LONGITUDE</small>
+        <strong>THRISSUR / 10.5276° N</strong>
+      </div>
+    </div>
+    <span class="menu-panel__note" data-en="A fictional high-end design study · Thrissur, Kerala" data-ml="സാങ്കൽപ്പിക ഹൈ-ടെക് ഡിസൈൻ പഠനം · തൃശ്ശൂർ, കേരളം">A fictional high-end design study · Thrissur, Kerala</span>
+  </nav>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home" aria-label="Ferrari Kerala futuristic introduction">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-scene" id="hero-scene" role="img" aria-label="Ferrari car in Kerala landscape">
+        <div class="scene-overlay"></div>
+        <div class="scene-hud-overlay" aria-hidden="true">
+          <div class="hud-corner hud-corner--tl"></div>
+          <div class="hud-corner hud-corner--tr"></div>
+          <div class="hud-corner hud-corner--bl"></div>
+          <div class="hud-corner hud-corner--br"></div>
+          <div class="hud-compass">
+            <span>VELOCITY VECTOR: 0 KM/H</span>
+            <span>HYBRID SYSTEM: NOMINAL</span>
+          </div>
+        </div>
+        <div class="scene-image" id="scene-image"></div>
+      </div>
+
+      <div class="hero-topline">
+        <span class="telemetry-badge" data-en="CHASSIS SPEC: 296 GTB KERALA EDITION" data-ml="ഷാസി സ്പെക്: 296 GTB കേരള എഡിഷൻ">CHASSIS SPEC: 296 GTB KERALA EDITION</span>
+        <span class="coordinates-track">10°31' N &nbsp;·&nbsp; 76°13' E &nbsp;//&nbsp; SYSTEM ONLINE</span>
+      </div>
+
+      <div class="hero-copy" aria-live="polite">
+        <div class="hero-kicker-wrapper">
+          <span class="hero-pill-badge">V6 TWIN-TURBO HYBRID</span>
+          <p class="hero-kicker" id="slide-kicker">01 // KINETIC ARRIVAL</p>
+        </div>
+        <h1 id="slide-title">Redefining Speed<br>for the <em>Western Ghats.</em></h1>
+        <p id="slide-description" data-en="A cinematic, futuristic vision fusing Maranello engineering with the monsoon soul of Kerala. 830 CV unleashed on coastal tarmac." data-ml="മാരനെല്ലോയുടെ എഞ്ചിനീയറിംഗും കേരളത്തിന്റെ പ്രകൃതി സൗന്ദര്യവും സമന്വയിക്കുന്ന സിനിമാറ്റിക് പോർട്ട്ഫോളിയോ ആശയം. 830 കുതിരശക്തിയുടെ വിസ്മയം.">A cinematic, futuristic vision fusing Maranello engineering with the monsoon soul of Kerala. 830 CV unleashed on coastal tarmac.</p>
+        
+        <div class="hero-actions">
+          <a class="hero-cta-button" href="#model">
+            <span class="btn-text" data-en="INSPECT VEHICLE" data-ml="വാഹനം പരിശോധിക്കുക">INSPECT VEHICLE</span>
+            <span class="btn-icon" aria-hidden="true">↗</span>
+            <div class="btn-glare"></div>
+          </a>
+          <button class="sound-rev-btn" id="hero-rev-btn" title="Synthesize Hybrid Engine Roar">
+            <span class="sound-icon">⚡</span>
+            <span data-en="REV HYBRID V6" data-ml="എഞ്ചിൻ ശബ്ദം കേൾക്കൂ">REV HYBRID V6</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-controls">
+        <div class="hero-status-ticker">
+          <span class="ticker-pulse"></span>
+          <span class="hero-controls__caption" data-en="AERODYNAMIC ARCHITECTURE // 296 GTB" data-ml="എയറോഡൈനാമിക് രൂപകൽപ്പന // 296 GTB">AERODYNAMIC ARCHITECTURE // 296 GTB</span>
+        </div>
+        
+        <div class="carousel-controls" aria-label="Hero perspective slides">
+          <button class="carousel-arrow" id="previous-slide" aria-label="Previous slide">←</button>
+          <div class="carousel-dots">
+            <button class="carousel-dot is-active" data-slide="0" aria-label="Show slide 1" aria-current="true"></button>
+            <button class="carousel-dot" data-slide="1" aria-label="Show slide 2"></button>
+            <button class="carousel-dot" data-slide="2" aria-label="Show slide 3"></button>
+          </div>
+          <span class="carousel-count" id="carousel-count">01 <i>/</i> 03</span>
+          <button class="carousel-arrow" id="next-slide" aria-label="Next slide">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- KINETIC TELEMETRY STATS STRIP -->
+    <section class="telemetry-strip" id="telemetry" aria-label="Performance Specifications">
+      <div class="telemetry-container">
+        <div class="stat-card" data-tilt>
+          <div class="stat-header">
+            <span class="stat-label" data-en="ACCELERATION" data-ml="ത്വരണം">ACCELERATION</span>
+            <span class="stat-metric">0-100 KM/H</span>
+          </div>
+          <div class="stat-value">
+            <span class="counter" data-target="2.9">2.9</span><span class="unit">s</span>
+          </div>
+          <div class="stat-bar"><div class="stat-fill" style="width: 95%;"></div></div>
+          <p class="stat-detail" data-en="Instant torque vectoring" data-ml="തൽക്ഷണ ടോർക്ക് വെക്റ്ററിംഗ്">Instant torque vectoring</p>
+        </div>
+
+        <div class="stat-card stat-card--highlight" data-tilt>
+          <div class="stat-header">
+            <span class="stat-label" data-en="COMBINED OUTPUT" data-ml="ആകെ ഔട്ട്പുട്ട്">COMBINED OUTPUT</span>
+            <span class="stat-metric">ICE + MGU-K</span>
+          </div>
+          <div class="stat-value">
+            <span class="counter" data-target="830">830</span><span class="unit">CV</span>
+          </div>
+          <div class="stat-bar"><div class="stat-fill" style="width: 100%;"></div></div>
+          <p class="stat-detail" data-en="663 CV V6 + 167 CV Electric" data-ml="663 CV V6 + 167 CV ഇലക്ട്രിക്">663 CV V6 + 167 CV Electric</p>
+        </div>
+
+        <div class="stat-card" data-tilt>
+          <div class="stat-header">
+            <span class="stat-label" data-en="MAX VELOCITY" data-ml="പരമാവധി വേഗത">MAX VELOCITY</span>
+            <span class="stat-metric">DOWNFORCE STABLE</span>
+          </div>
+          <div class="stat-value">
+            <span class="counter-prefix">&gt;</span><span class="counter" data-target="330">330</span><span class="unit">KM/H</span>
+          </div>
+          <div class="stat-bar"><div class="stat-fill" style="width: 92%;"></div></div>
+          <p class="stat-detail" data-en="Active rear aerodynamic wing" data-ml="ആക്ടീവ് എയറോഡൈനാമിക് വിംഗ്">Active rear aerodynamic wing</p>
+        </div>
+
+        <div class="stat-card" data-tilt>
+          <div class="stat-header">
+            <span class="stat-label" data-en="PURE ELECTRIC" data-ml="ഇലക്ട്രിക് റേഞ്ച്">PURE ELECTRIC</span>
+            <span class="stat-metric">eDRIVE MODE</span>
+          </div>
+          <div class="stat-value">
+            <span class="counter" data-target="25">25</span><span class="unit">KM</span>
+          </div>
+          <div class="stat-bar"><div class="stat-fill" style="width: 60%;"></div></div>
+          <p class="stat-detail" data-en="Zero-emission silent cruising" data-ml="ശബ്ദമില്ലാത്ത ഇലക്ട്രിക് യാത്ര">Zero-emission silent cruising</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUTURISTIC INSPECTION BAY / MODEL SHOWCASE -->
+    <section class="model-section" id="model">
+      <div class="section-topline">
+        <p class="eyebrow">
+          <span>01</span>
+          <span data-en="FUTURISTIC INSPECTION BAY" data-ml="വാഹന പരിശോധന ബേ">FUTURISTIC INSPECTION BAY</span>
+        </p>
+        <span class="section-location">KERALA AERODYNAMICS LAB // THRISSUR</span>
+      </div>
+
+      <div class="model-layout">
+        <div class="model-title">
+          <div class="chassis-tag">
+            <span class="tag-glow"></span>
+            <span data-en="BERLINETTA HYBRID ARCHITECTURE" data-ml="ബെർലിനെറ്റ ഹൈബ്രിഡ് ആർക്കിടെക്ചർ">BERLINETTA HYBRID ARCHITECTURE</span>
+          </div>
+          <h2>296 <em>GTB</em></h2>
+        </div>
+
+        <div class="model-copy">
+          <p data-en="The 296 GTB represents the revolution of Ferrari's mid-rear sports cars: an innovative 120° V6 turbo mated with a plug-in electric motor. Explored here through an interactive high-tech preview."
+             data-ml="ഫെറാരിയുടെ മിഡ്-റിയർ സ്പോർട്സ് കാറുകളിലെ പുതിയ വിപ്ലവമാണ് 296 GTB: 120 ഡിഗ്രി V6 ടർബോ എഞ്ചിനും പ്ലഗ്-ഇൻ ഇലക്ട്രിക് മോട്ടോറും. ഒരു സംവേദനാത്മക ഹൈടെക് അനുഭവത്തിലൂടെ അടുത്തറിയാം.">
+            The 296 GTB represents the revolution of Ferrari's mid-rear sports cars: an innovative 120° V6 turbo mated with a plug-in electric motor. Explored here through an interactive high-tech preview.
+          </p>
+          
+          <!-- eManettino Drive Mode Selector -->
+          <div class="emanettino-container">
+            <span class="emanettino-title" data-en="eMANETTINO DRIVE SYSTEM" data-ml="ഇ-മാനെറ്റിനോ ഡ്രൈവ് മോഡുകൾ">eMANETTINO DRIVE SYSTEM</span>
+            <div class="emanettino-modes" role="radiogroup" aria-label="Drive Mode Selector">
+              <button class="emanettino-btn" data-mode="edrive" role="radio" aria-checked="false">
+                <span class="mode-glow"></span>
+                <span class="mode-code">eD</span>
+                <span class="mode-name">eDRIVE</span>
+              </button>
+              <button class="emanettino-btn is-active" data-mode="hybrid" role="radio" aria-checked="true">
+                <span class="mode-glow"></span>
+                <span class="mode-code">HY</span>
+                <span class="mode-name">HYBRID</span>
+              </button>
+              <button class="emanettino-btn" data-mode="performance" role="radio" aria-checked="false">
+                <span class="mode-glow"></span>
+                <span class="mode-code">PF</span>
+                <span class="mode-name">PERF</span>
+              </button>
+              <button class="emanettino-btn" data-mode="qualify" role="radio" aria-checked="false">
+                <span class="mode-glow"></span>
+                <span class="mode-code">QL</span>
+                <span class="mode-name">QUALIFY</span>
+              </button>
+            </div>
+            <div class="emanettino-status-pill" id="mode-status-pill">
+              <span class="pulse-light"></span>
+              <span id="mode-status-text" data-en="HYBRID MODE ACTIVE: Intelligent energy management between V6 and MGU-K electric motor." data-ml="ഹൈബ്രിഡ് മോഡ്: V6 എഞ്ചിനും ഇലക്ട്രിക് മോട്ടോറും തമ്മിലുള്ള കാര്യക്ഷമമായ ഊർജ്ജ വിനിയോഗം.">HYBRID MODE ACTIVE: Intelligent energy management between V6 and MGU-K electric motor.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Multi-Angle Visualizer with HUD Hotspots -->
+      <div class="visualizer-wrapper">
+        <div class="visualizer-tabs" role="tablist" aria-label="Car Angle Views">
+          <button class="view-tab is-active" data-angle="side" role="tab" aria-selected="true">
+            <span class="tab-index">01</span>
+            <span data-en="SIDE AERODYNAMICS" data-ml="സൈഡ് പ്രൊഫൈൽ">SIDE AERODYNAMICS</span>
+          </button>
+          <button class="view-tab" data-angle="front" role="tab" aria-selected="false">
+            <span class="tab-index">02</span>
+            <span data-en="FRONT TEATRAY AERO" data-ml="ഫ്രണ്ട് എയറോ">FRONT TEATRAY AERO</span>
+          </button>
+          <button class="view-tab" data-angle="rear" role="tab" aria-selected="false">
+            <span class="tab-index">03</span>
+            <span data-en="REAR ACTIVE SPOILER" data-ml="റിയർ ഡിഫ്യൂസർ">REAR ACTIVE SPOILER</span>
+          </button>
+          <button class="view-tab" data-angle="detail" role="tab" aria-selected="false">
+            <span class="tab-index">04</span>
+            <span data-en="COCKPIT CRAFT" data-ml="കോക്ക്പിറ്റ് ഡിസൈൻ">COCKPIT CRAFT</span>
+          </button>
+        </div>
+
+        <div class="model-visual" id="model-visual-container" data-tilt>
+          <div class="hud-scanline" aria-hidden="true"></div>
+          <div class="hud-target-grid" aria-hidden="true"></div>
+          
+          <div class="model-image-container">
+            <img src="assets/ferrari-296-side.jpg" alt="Yellow Ferrari 296 GTB photographed from the side profile" class="model-main-img" id="model-main-img">
+          </div>
+
+          <!-- Interactive HUD Hotspots -->
+          <div class="hud-hotspots" id="hud-hotspots">
+            <!-- Hotspot 1 -->
+            <div class="hotspot" style="top: 38%; left: 32%;" data-title="120° V6 TWIN-TURBO" data-desc="663 CV combustion engine with turbos positioned inside the 'vee' for razor-sharp throttle response.">
+              <button class="hotspot-trigger" aria-label="View engine specs">
+                <span class="hotspot-pulse"></span>
+                <span class="hotspot-dot"></span>
+              </button>
+              <div class="hotspot-card">
+                <span class="hotspot-badge">POWERTRAIN</span>
+                <h4>120° V6 TWIN-TURBO</h4>
+                <p>Wide-vee configuration delivers low center of gravity and unmatched acoustic harmonics.</p>
+              </div>
+            </div>
+
+            <!-- Hotspot 2 -->
+            <div class="hotspot" style="top: 55%; left: 74%;" data-title="ACTIVE REAR SPOILER" data-desc="Generates up to 360 kg of downforce at 250 km/h in high-downforce Assetto Fiorano configuration.">
+              <button class="hotspot-trigger" aria-label="View aerodynamic spoiler specs">
+                <span class="hotspot-pulse"></span>
+                <span class="hotspot-dot"></span>
+              </button>
+              <div class="hotspot-card">
+                <span class="hotspot-badge">AERODYNAMICS</span>
+                <h4>ACTIVE REAR SPOILER</h4>
+                <p>Automatically deploys under heavy braking and cornering to maximize stability.</p>
+              </div>
+            </div>
+
+            <!-- Hotspot 3 -->
+            <div class="hotspot" style="top: 65%; left: 24%;" data-title="CARBON CERAMIC BRAKES" data-desc="Brembo aero-caliper system with ABS Evo for pinpoint decelerations in monsoon conditions.">
+              <button class="hotspot-trigger" aria-label="View braking system specs">
+                <span class="hotspot-pulse"></span>
+                <span class="hotspot-dot"></span>
+              </button>
+              <div class="hotspot-card">
+                <span class="hotspot-badge">CHASSIS & BRAKES</span>
+                <h4>CCM-R BRAKE SYSTEM</h4>
+                <p>Integrated ABS Evo brake-by-wire controller tuned for precision wet and dry bite.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="visual-hud-tag">
+            <span class="hud-indicator"></span>
+            <span id="visual-caption-text" data-en="LIVE TELEMETRY VIEW: THRISSUR CONCEPT MODEL" data-ml="തത്സമയ കാഴ്ച: തൃശ്ശൂർ കോൺസെപ്റ്റ് മോഡൽ">LIVE TELEMETRY VIEW: THRISSUR CONCEPT MODEL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KERALA IMMERSION EXPERIENCE -->
+    <section class="experience-section" id="experience">
+      <div class="section-topline">
+        <p class="eyebrow">
+          <span>02</span>
+          <span data-en="THE KERALA MATRIX" data-ml="കേരള അനുഭവം">THE KERALA MATRIX</span>
+        </p>
+        <span class="section-location" data-en="A PROPOSED CREATIVE DIRECTION" data-ml="നിർദ്ദേശിത സൃഷ്ടിപരമായ ദിശ">A PROPOSED CREATIVE DIRECTION</span>
+      </div>
+
+      <div class="experience-heading">
+        <h2 data-en="Performance has a place.<br>Where thunder meets the coast." 
+            data-ml="ശക്തിക്ക് ഒരു നാടുണ്ട്.<br>തീരവും ഗർജ്ജനവും ചേരുമ്പോൾ.">
+          Performance has a place.<br>Where thunder <em>meets the coast.</em>
+        </h2>
+        <p data-en="Conceived as an aesthetic intersection: Maranello's wind-tunnel sculpted aluminum moving against Kerala's emerald palms, spice-route granite, and Arabian Sea mist."
+           data-ml="മാരനെല്ലോയുടെ എയറോഡൈനാമിക്സുകളും കേരളത്തിന്റെ പച്ചപ്പും കടൽക്കാറ്റും തമ്മിലുള്ള അത്യപൂർവ്വ സംഗമം.">
+          Conceived as an aesthetic intersection: Maranello's wind-tunnel sculpted aluminum moving against Kerala's emerald palms, spice-route granite, and Arabian Sea mist.
+        </p>
+      </div>
+
+      <div class="experience-grid">
+        <article class="experience-card experience-card--landscape" data-tilt>
+          <div class="card-image-wrap">
+            <img class="card-photo" src="assets/ferrari-296-front.jpg" alt="Ferrari 296 GTB photographed from the front">
+            <div class="card-glare" aria-hidden="true"></div>
+            <div class="card-reticle" aria-hidden="true"></div>
+          </div>
+          <div class="card-content">
+            <span class="card-index">01 // ATMOSPHERE & GREEN</span>
+            <h3 data-en="Green, without the noise." data-ml="ശാന്തമായ പച്ചപ്പ്.">Green, without the noise.</h3>
+            <p data-en="In eDrive mode, glide past backwaters with zero acoustic disturbance and zero tailpipe emissions. Pure serenity." 
+               data-ml="ഇ-ഡ്രൈവ് മോഡിൽ, കായലുകളുടെ ഓരത്തൂടെ പൂർണ്ണ നിശബ്ദതയിലും പുകയില്ലാതെയും സഞ്ചരിക്കാം.">
+              In eDrive mode, glide past backwaters with zero acoustic disturbance and zero tailpipe emissions. Pure serenity.
+            </p>
+          </div>
+        </article>
+
+        <article class="experience-card experience-card--craft" data-tilt>
+          <div class="card-image-wrap">
+            <img class="card-photo" src="assets/ferrari-296-detail.jpg" alt="Ferrari 296 GTB photographed from the rear three-quarter angle">
+            <div class="card-glare" aria-hidden="true"></div>
+            <div class="card-reticle" aria-hidden="true"></div>
+          </div>
+          <div class="card-content">
+            <span class="card-index">02 // DIGITAL ARCHITECTURE</span>
+            <h3 data-en="Made to be felt." data-ml="അനുഭവിച്ചറിയാൻ.">Made to be felt.</h3>
+            <p data-en="Full digital interface with capacitive steering wheel controls, haptic glass panels, and driver-focused ergonomics." 
+               data-ml="പൂർണ്ണ ഡിജിറ്റൽ ഇന്റർഫേസും കാപ്പസിറ്റീവ് സ്റ്റിയറിംഗ് കൺട്രോളുകളും ഡ്രൈവർ കേന്ദ്രീകൃത ഡിസൈനും.">
+              Full digital interface with capacitive steering wheel controls, haptic glass panels, and driver-focused ergonomics.
+            </p>
+          </div>
+        </article>
+
+        <article class="experience-card experience-card--welcome" data-tilt>
+          <div class="card-image-wrap">
+            <img class="card-photo card-photo--wide" src="assets/ferrari-296-rear.jpg" alt="Ferrari 296 GTB photographed from the rear">
+            <div class="card-glare" aria-hidden="true"></div>
+            <div class="card-reticle" aria-hidden="true"></div>
+          </div>
+          <div class="card-content">
+            <span class="card-index">03 // KINETIC HOSPITALITY</span>
+            <h3 data-en="Time, well spent." data-ml="മനോഹരമായി ചെലവിട്ട സമയം.">Time, well spent.</h3>
+            <p data-en="A welcoming, unhurried experience imagined for Kerala's connoisseurs. An uncompromising tribute to automotive passion." 
+               data-ml="കേരളത്തിലെ വാഹന പ്രേമികൾക്കായി സങ്കൽപ്പിച്ച അത്യാധുനിക അനുഭവം. യഥാർത്ഥ ഓട്ടോമോട്ടീവ് വികാരം.">
+              A welcoming, unhurried experience imagined for Kerala's connoisseurs. An uncompromising tribute to automotive passion.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CLOSING CONCEPT SECTION -->
+    <section class="closing-section" id="about">
+      <div class="closing-backdrop-glow" aria-hidden="true"></div>
+      <p class="eyebrow">
+        <span>03</span>
+        <span data-en="MISSION & CREATIVE ORIGIN" data-ml="ലക്ഷ്യവും ആശയവും">MISSION & CREATIVE ORIGIN</span>
+      </p>
+      <h2 data-en="Performance has a place.<br><em>Imagine yours.</em>" 
+          data-ml="പ്രകടനത്തിനും ഒരു നാടുണ്ട്.<br><em>സങ്കൽപ്പിക്കൂ.</em>">
+        Performance has a place.<br><em>Imagine yours.</em>
+      </h2>
+      <p data-en="Created by Rojan Roy as an independent portfolio showcase pushing modern web interaction, telemetry visualization, and 3D perspectives. This fictional project is not commissioned, sponsored, or affiliated with Ferrari S.p.A. No real vehicle sales, showroom, or live commercial service is represented."
+         data-ml="റോജൻ റോയ് സ്വതന്ത്ര പോർട്ട്ഫോളിയോ ആശയമായി സൃഷ്ടിച്ചത്. ഫെറാരി കമ്മീഷൻ ചെയ്തതോ സ്പോൺസർ ചെയ്തതോ ആയ പ്രോജക്റ്റല്ല ഇത്. യഥാർത്ഥ വാഹന വിൽപ്പനയോ ഷോറൂമോ ഇവിടെ പ്രതിനിധീകരിക്കുന്നില്ല.">
+        Created by Rojan Roy as an independent portfolio showcase pushing modern web interaction, telemetry visualization, and 3D perspectives. This fictional project is not commissioned, sponsored, or affiliated with Ferrari S.p.A. No real vehicle sales, showroom, or live commercial service is represented.
+      </p>
+      
+      <div class="closing-actions">
+        <a class="closing-link" href="#home">
+          <span data-en="RETURN TO SUMMIT" data-ml="തുടക്കത്തിലേക്ക് മടങ്ങുക">RETURN TO SUMMIT</span>
+          <span class="arrow-up" aria-hidden="true">↑</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand brand--footer" href="#home" aria-label="Back to Ferrari Kerala concept home">
+      <span class="brand__monogram">F<span>/</span>K</span>
+      <span class="brand__name">KERALA · CONCEPT 296</span>
+    </a>
+    <p data-en="Independent Portfolio Concept · Fictional Thrissur Setting · Crafted by Rojan Roy"
+       data-ml="സ്വതന്ത്ര പോർട്ട്ഫോളിയോ ആശയം · സാങ്കൽപ്പിക തൃശ്ശൂർ പശ്ചാത്തലം · നിർമ്മിച്ചത് റോജൻ റോയ്">
+      Independent Portfolio Concept · Fictional Thrissur Setting · Crafted by Rojan Roy
+    </p>
+    <span class="footer-credit">
+      <span data-en="Ferrari 296 GTB photography by Alexander Migl:" data-ml="ഫെറാരി 296 GTB ചിത്രങ്ങൾ:">Ferrari 296 GTB photography by Alexander Migl:</span>
+      <a href="https://commons.wikimedia.org/wiki/File:Ferrari_296_GTB_1X7A6377.jpg" target="_blank" rel="noopener noreferrer">side</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Ferrari_296_GTB_DSC_6997.jpg" target="_blank" rel="noopener noreferrer">front</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Ferrari_296_GTB_DSC_7009.jpg" target="_blank" rel="noopener noreferrer">detail</a> ·
+      <a href="https://commons.wikimedia.org/wiki/File:Ferrari_296_GTB_DSC_7010.jpg" target="_blank" rel="noopener noreferrer">rear</a> ·
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+    </span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

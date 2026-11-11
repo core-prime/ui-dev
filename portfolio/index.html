@@ -63,7 +63,7 @@
               Crafting <em class="serif-accent">thoughtful</em> digital experiences through visual clarity & user-centered thinking.
             </h1>
             <p class="hero__bio">
-              With a strong foundation in branding and visual communication, I translate complex problems into intuitive, elegant digital interfaces. Currently building end-to-end design systems while learning modern front-end web fundamentals.
+              With a strong background in graphic design and branding, I craft intuitive, user-centered digital interfaces and responsive web experiences. Currently completing an intensive program in <strong>UI/UX Design & Front-End Web Development</strong> (HTML5, CSS3, JavaScript ongoing — completing late November 2026).
             </p>
 
             <div class="hero__actions">
@@ -71,10 +71,36 @@
                 Explore Selected Works
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m7 17 10-10M7 7h10v10"/></svg>
               </a>
-              <a href="assets/Rojan_Roy_CV.pdf" download class="btn btn--ghost">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download CV
-              </a>
+
+              <!-- Dual CV Download Dropdown -->
+              <div class="cv-dropdown">
+                <button type="button" class="btn btn--ghost cv-dropdown__trigger" id="heroCvDropdownBtn" aria-haspopup="true" aria-expanded="false">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>Download CV</span>
+                  <svg class="cv-dropdown__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="cv-dropdown__menu" aria-labelledby="heroCvDropdownBtn">
+                  <a href="assets/Rojan_Roy_Creative_CV.pdf" download="Rojan_Roy_Creative_CV.pdf" class="cv-dropdown__item">
+                    <span class="cv-dropdown__icon cv-dropdown__icon--creative">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                    </span>
+                    <span class="cv-dropdown__content">
+                      <strong class="cv-dropdown__title">Creative Visual CV <span class="cv-badge cv-badge--gold">New</span></strong>
+                      <small class="cv-dropdown__hint">Styled visual design layout (PDF)</small>
+                    </span>
+                  </a>
+                  <a href="assets/Rojan_Roy_CV.pdf" download="Rojan_Roy_ATS_Resume.pdf" class="cv-dropdown__item">
+                    <span class="cv-dropdown__icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </span>
+                    <span class="cv-dropdown__content">
+                      <strong class="cv-dropdown__title">ATS-Friendly Resume</strong>
+                      <small class="cv-dropdown__hint">Text-optimized for portals & company ATS</small>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
               <div class="hero__social">
                 <a href="mailto:rojanroy694@gmail.com" class="social-icon" aria-label="Email Rojan Roy">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
@@ -108,7 +134,7 @@
             </div>
           </div>
           <div class="hero__strip-item" data-project="nanora">
-            <img src="assets/projects/nanora-logo.png" alt="Nanora childcare UX project" loading="lazy" />
+            <img src="assets/projects/nanora-brand.jpg" alt="Nanora childcare UX project" loading="lazy" />
             <div class="hero__strip-caption">
               <span>02 / Product Concept</span>
               <strong>Nanora Childcare</strong>
@@ -135,7 +161,7 @@
         <div class="works__header">
           <div>
             <span class="section-tag">PORTFOLIO</span>
-            <h2 class="section-title">Selected Works <span class="counter">(06)</span></h2>
+            <h2 class="section-title">Selected Works <span class="counter">(07)</span></h2>
             <p class="section-desc">
               Case studies spanning product design, user research, brand identity systems, and digital interfaces.
             </p>
@@ -152,10 +178,38 @@
         <!-- Projects Grid -->
         <div class="works__grid">
 
+          <!-- Project: Ferrari 296 GTB Kerala Concept (Flagship Creative Dev) -->
+          <article class="work-card" data-category="uiux" data-project="ferrari">
+            <div class="work-card__media work-card__media--dark">
+              <img src="ferrari-kerala/assets/ferrari-296-side.jpg" alt="Ferrari 296 GTB — Kerala Edition Futuristic Concept" loading="lazy" />
+              <div class="work-card__overlay">
+                <span class="work-card__action-btn">
+                  Launch Interactive Experience
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m7 17 10-10M7 7h10v10"/></svg>
+                </span>
+              </div>
+            </div>
+            <div class="work-card__content">
+              <div class="work-card__meta">
+                <span class="badge">Creative Dev</span>
+                <span class="badge badge--ghost">Automotive UI</span>
+                <span class="badge badge--gold" title="Live Interactive Site">Live Website ↗</span>
+                <span class="work-card__year">2026</span>
+              </div>
+              <h3 class="work-card__title">Ferrari 296 GTB — Futuristic Kerala Concept</h3>
+              <p class="work-card__desc">
+                An immersive, high-performance web experience featuring an interactive eManettino drive selector, browser-native Web Audio API engine sound synthesis, 3D perspective mouse physics, and bilingual Malayalam/English telemetry HUD.
+              </p>
+              <div class="work-card__tags">
+                <span>Web Audio API</span> · <span>3D Tilt Physics</span> · <span>Bilingual HUD</span> · <span>Dynamic Themes</span>
+              </div>
+            </div>
+          </article>
+
           <!-- Project 1: Nanora -->
           <article class="work-card" data-category="uiux" data-project="nanora">
             <div class="work-card__media">
-              <img src="assets/projects/nanora-logo.png" alt="Nanora — Childcare & Early Learning Marketplace" loading="lazy" />
+              <img src="assets/projects/nanora-brand.jpg" alt="Nanora — Childcare & Early Learning Marketplace" loading="lazy" />
               <div class="work-card__overlay">
                 <span class="work-card__action-btn">
                   Read Case Study
@@ -167,6 +221,7 @@
               <div class="work-card__meta">
                 <span class="badge">UI/UX Design</span>
                 <span class="badge badge--ghost">Web & Mobile</span>
+                <span class="badge badge--gold" title="Live Figma File Available">Figma Live</span>
                 <span class="work-card__year">2026</span>
               </div>
               <h3 class="work-card__title">Nanora — Childcare & Early Learning Marketplace</h3>
@@ -194,9 +249,11 @@
               <div class="work-card__meta">
                 <span class="badge">UI/UX Design</span>
                 <span class="badge badge--ghost">Mobile App</span>
+                <span class="badge badge--gold" title="Interactive Prototype Available">Prototype Live</span>
+                <span class="badge badge--ghost">Figma File</span>
                 <span class="work-card__year">2026</span>
               </div>
-              <h3 class="work-card__title">Nexora — All-in-One Planner & Travel App</h3>
+              <h3 class="work-card__title">Nexora — All-in-One Planner & Travel App (Group Project)</h3>
               <p class="work-card__desc">
                 A multi-module productivity companion featuring an interactive countdown hero, budget trackers, and travel planning flows built on modern iOS design patterns.
               </p>
@@ -287,10 +344,10 @@
             </div>
           </article>
 
-          <!-- Project 6: Tailor Monogram -->
-          <article class="work-card" data-category="branding" data-project="tailor">
+          <!-- Project 6: WOLFX Bikes -->
+          <article class="work-card" data-category="branding" data-project="wolfx">
             <div class="work-card__media">
-              <img src="assets/projects/tailor-x-logo.png" alt="Letterpress Fashion Monogram" loading="lazy" />
+              <img src="assets/projects/wolfx-logo.jpg" alt="WOLFX Bikes — Brand Identity" loading="lazy" />
               <div class="work-card__overlay">
                 <span class="work-card__action-btn">
                   View Case
@@ -304,12 +361,12 @@
                 <span class="badge badge--ghost">Print & Letterpress</span>
                 <span class="work-card__year">2024</span>
               </div>
-              <h3 class="work-card__title">Fashion Monogram — Measuring Tape Letterpress</h3>
+              <h3 class="work-card__title">WOLFX Bikes — Final Year Brand Identity Project</h3>
               <p class="work-card__desc">
-                Minimalist monogram transforming a flexible measuring tape into letterform geometry, rendered as a tactile deboss on textured cotton paper.
+                A bold, high-energy brand identity for WOLFX Bikes — built around a geometric wolf-head emblem integrated into a custom typeface, with full brand rollout across merch, posters, and outdoor advertising.
               </p>
               <div class="work-card__tags">
-                <span>Monogram</span> · <span>Print Craft</span> · <span>Minimalism</span>
+                <span>Logo Design</span> · <span>Brand Identity</span> · <span>Typography</span>
               </div>
             </div>
           </article>
@@ -425,16 +482,16 @@
           <!-- Education 1 -->
           <div class="timeline-row timeline-row--edu">
             <div class="timeline-row__meta">
-              <span class="timeline-date">In Progress · Nov 2026</span>
-              <span class="timeline-loc">Professional Certification</span>
+              <span class="timeline-date">In Progress · Expected Nov 2026</span>
+              <span class="timeline-loc">Professional Training</span>
             </div>
             <div class="timeline-row__body">
               <div class="timeline-row__header">
                 <h3 class="timeline-role">UI/UX Design & Website Development</h3>
-                <span class="timeline-company">Design & Code Bootcamp</span>
+                <span class="timeline-company">Course in Progress · Finishing Late Nov 2026</span>
               </div>
               <p class="timeline-summary">
-                Hands-on training in user research, wireframing, interactive prototyping, design systems, and responsive web technologies (HTML, CSS, JavaScript).
+                Specialized training in user research, wireframing, information architecture, and interface design in Figma, combined with front-end development (HTML, CSS, and JavaScript currently in progress to understand how designs translate into responsive websites).
               </p>
             </div>
           </div>
@@ -443,7 +500,7 @@
           <div class="timeline-row timeline-row--edu">
             <div class="timeline-row__meta">
               <span class="timeline-date">2020 – 2023</span>
-              <span class="timeline-loc">Kerala, India</span>
+              <span class="timeline-loc">Thrissur, Kerala, India</span>
             </div>
             <div class="timeline-row__body">
               <div class="timeline-row__header">
@@ -479,14 +536,12 @@
               <span class="cat-dot"></span> UI/UX Design
             </h3>
             <ul class="skill-tags">
-              <li>Wireframing</li>
-              <li>User Flows</li>
-              <li>Information Architecture</li>
-              <li>User Personas</li>
-              <li>Empathy Mapping</li>
+              <li>Wireframing & UI Design</li>
+              <li>User Flows & Architecture</li>
+              <li>User Personas & Empathy Maps</li>
               <li>User Journey Mapping</li>
               <li>Card Sorting</li>
-              <li>Visual Hierarchy</li>
+              <li>Visual Hierarchy & Typography</li>
               <li>Design Systems</li>
             </ul>
           </div>
@@ -496,12 +551,12 @@
               <span class="cat-dot"></span> Graphic & Brand Design
             </h3>
             <ul class="skill-tags">
-              <li>Brand Identity Systems</li>
+              <li>Branding & Identity</li>
               <li>Logo Design & Monograms</li>
-              <li>Digital Illustration</li>
-              <li>Packaging & 3D Mockups</li>
+              <li>Digital Illustrations</li>
               <li>Social Media Creatives</li>
-              <li>Print & Typography</li>
+              <li>Packaging & 3D Mockups</li>
+              <li>Print & Editorial Layout</li>
             </ul>
           </div>
 
@@ -512,25 +567,26 @@
             <ul class="skill-tags">
               <li>Figma</li>
               <li>Miro</li>
+              <li>Adobe XD</li>
               <li>Adobe Photoshop</li>
               <li>Adobe Illustrator</li>
-              <li>Adobe InDesign</li>
-              <li>Canva</li>
+              <li>InDesign & Canva</li>
               <li>VS Code</li>
             </ul>
           </div>
 
           <div class="skill-category">
             <h3 class="skill-category__title">
-              <span class="cat-dot"></span> Web Fundamentals
+              <span class="cat-dot"></span> Front-End Development
             </h3>
             <ul class="skill-tags">
               <li>HTML5 Semantic Markup</li>
-              <li>CSS3 / Flexbox & Grid</li>
-              <li>Responsive Layouts</li>
-              <li>JavaScript Essentials</li>
+              <li>CSS3 (Flexbox & Grid)</li>
+              <li>Responsive Web Design</li>
+              <li>JavaScript (DOM & Logic — In Progress)</li>
+              <li>Bootstrap</li>
             </ul>
-            <span class="skill-badge-note">Currently learning to bridge design & code</span>
+            <span class="skill-badge-note">Active course focus · Completing late November 2026</span>
           </div>
 
         </div>
@@ -558,10 +614,35 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
               Email Me directly
             </a>
-            <a href="assets/Rojan_Roy_CV.pdf" download class="btn btn--ghost btn--large">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Download Full Resume
-            </a>
+
+            <!-- Dual CV Download in Contact Section -->
+            <div class="cv-dropdown cv-dropdown--large">
+              <button type="button" class="btn btn--ghost btn--large cv-dropdown__trigger" id="contactCvDropdownBtn" aria-haspopup="true" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download CV / Resume</span>
+                <svg class="cv-dropdown__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+              <div class="cv-dropdown__menu cv-dropdown__menu--up" aria-labelledby="contactCvDropdownBtn">
+                <a href="assets/Rojan_Roy_Creative_CV.pdf" download="Rojan_Roy_Creative_CV.pdf" class="cv-dropdown__item">
+                  <span class="cv-dropdown__icon cv-dropdown__icon--creative">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                  </span>
+                  <span class="cv-dropdown__content">
+                    <strong class="cv-dropdown__title">Creative Visual CV <span class="cv-badge cv-badge--gold">New</span></strong>
+                    <small class="cv-dropdown__hint">Styled visual design layout (PDF)</small>
+                  </span>
+                </a>
+                <a href="assets/Rojan_Roy_CV.pdf" download="Rojan_Roy_ATS_Resume.pdf" class="cv-dropdown__item">
+                  <span class="cv-dropdown__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                  </span>
+                  <span class="cv-dropdown__content">
+                    <strong class="cv-dropdown__title">ATS-Friendly Resume</strong>
+                    <small class="cv-dropdown__hint">Text-optimized for portals & company ATS</small>
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div class="contact__direct-info">

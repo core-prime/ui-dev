@@ -7,11 +7,33 @@
 
   // ─── Project Case Studies Data ───
   const CASE_STUDIES = {
+    ferrari: {
+      tag: "Creative Development · Automotive UI/UX",
+      title: "Ferrari 296 GTB — Kerala Edition Futuristic Concept",
+      tagline: "“Where Maranello aerodynamic precision meets the soul of Kerala.”",
+      image: "ferrari-kerala/assets/ferrari-296-side.jpg",
+      role: "Creative Developer & UI Designer",
+      duration: "November 2026",
+      tools: "HTML5, Advanced CSS3, Web Audio API, Vanilla JS",
+      overview: "An independent, high-performance web experience reimagining the Ferrari 296 GTB sports car tailored for Kerala's landscapes. Incorporating real-time audio synthesis, dynamic eManettino drive themes, 3D perspective mouse-tilt physics, and bilingual Malayalam/English telemetry HUD.",
+      problem: "Traditional automotive landing pages are often static and non-interactive, missing the visceral excitement, roar, and precision engineering that define Ferrari.",
+      solution: "Engineered an immersive, futuristic web experience featuring interactive 360° inspection views, pulsing telemetry hotspots, a native browser Web Audio API engine rev synthesizer, and dynamic drive mode toggles that transform the entire site's lighting and acoustics.",
+      steps: [
+        "1. Interactive eManettino Switcher: 4 distinct drive modes (eDrive, Hybrid, Performance, Qualify) dynamically updating site theme colors and specs.",
+        "2. Native Web Audio Engine: Synthesizes hybrid V6 engine roars and tactile HUD acoustic clicks with zero external audio assets.",
+        "3. Virtual Inspection Bay: Interactive vehicle angle switcher with pulsing HUD hotspots detailing engine, aero, and braking components.",
+        "4. 3D Perspective Tilt & Specular Lighting: Physics-based mouse tracking and dynamic lighting sheen across all presentation cards.",
+        "5. Full Bilingual Localization: English and Malayalam typography and telemetry readouts."
+      ],
+      link: "ferrari-kerala/",
+      linkText: "Launch Live Interactive Website 🚀"
+    },
+
     nanora: {
       tag: "UI/UX Case Study · Concept Project",
       title: "Nanora — Childcare & Early Learning Marketplace",
       tagline: "“Trust first, clarity second, convenience third.”",
-      image: "assets/projects/nanora-logo.png",
+      image: "assets/projects/nanora-brand.jpg",
       role: "UX/UI Designer",
       duration: "Concept Design (2026)",
       tools: "Figma, Miro, Adobe Illustrator",
@@ -26,15 +48,16 @@
         "5. Manage ongoing care: Integrated schedule tracking, daily notes, and family messaging."
       ],
       sitemap: "The complete sitemap encompasses 12 dedicated pages—balancing dual onboarding flows for parents and caregivers, a trust & safety center, and transparent service tiers.",
-      link: "case-nanora.html"
+      link: "case-nanora.html",
+      figmaLink: "https://www.figma.com/design/klnUPGZXtfZLhOvzbqwynk/Nanora-%E2%80%94-Landing-Page?node-id=0-1&t=Zf918zWOVC3KPX6T-1"
     },
 
     nexora: {
-      tag: "UI/UX Design · Mobile App Concept",
+      tag: "UI/UX Design · Group Mobile App Project",
       title: "Nexora — All-in-One Planner & Travel Companion",
       tagline: "Streamlining daily productivity, habits, and complex travel workflows.",
       image: "assets/projects/nexora-travel-ui.png",
-      role: "UI/UX Designer (Group Concept)",
+      role: "UI/UX Designer (Group Project)",
       duration: "2026",
       tools: "Figma, Miro, iOS Design System",
       overview: "Nexora is a comprehensive personal planning ecosystem designed to bring tasks, habits, and itineraries into a single seamless mobile interface. The showcased module focuses on the high-fidelity Travel Planner interface.",
@@ -45,7 +68,9 @@
         "Card sorting to consolidate disparate productivity tasks into 4 primary navigation hubs.",
         "High-fidelity iOS design system with high-contrast dark mode, violet gradient accents (#7C3AED), and tactile card micro-interactions."
       ],
-      link: null
+      link: null,
+      figmaLink: "https://www.figma.com/design/Gj42Sg2bZHQEIdlUqwu649/02-NEXORA---Group-project?node-id=0-1&t=zrcPDKEJQ16pHXGn-1",
+      protoLink: "https://www.figma.com/proto/Gj42Sg2bZHQEIdlUqwu649/02-NEXORA---Group-project?node-id=2038-5&t=XMoTofQCBeOGoGYm-1&scaling=scale-down&content-scaling=fixed&page-id=126%3A55&starting-point-node-id=2194%3A376&show-proto-sidebar=1"
     },
 
     dasandco: {
@@ -71,7 +96,7 @@
       tag: "Brand Identity · Packaging & Merchandise",
       title: "Quor House — Artisanal Coffee Roastery",
       tagline: "360-degree brand experience for a boutique coffee house founded in 2022.",
-      image: "assets/projects/quor-house-cup.png",
+      image: "assets/projects/quor-house-brand-cover.jpg",
       role: "Brand & Graphic Designer",
       duration: "2024",
       tools: "Illustrator, Photoshop, 3D Product Mockups",
@@ -79,11 +104,17 @@
       problem: "Designing an earthy yet sophisticated brand identity that stands out in a crowded specialty coffee market.",
       solution: "Created a distinctive custom serif wordmark integrating a roasted coffee bean into the negative space of the letter 'Q'. Paired a rich Forest Green (#1E5631) and Terracotta Brown (#A0522D) with organic kraft paper textures.",
       steps: [
-        "Dual-sided business cards staged on basalt stone cubes.",
-        "Eco-friendly kraft coffee bean pouches with roast origin labeling.",
-        "Embroidered polo staff uniforms and custom geometric cap apparel.",
-        "Rustic wooden sidewalk A-frame chalkboard sign for foot traffic.",
-        "iOS squircle app icon design for mobile loyalty ordering."
+        "Brand Guidelines & Identity Standards V.1 defining clear space, hierarchy, and core color system.",
+        "Logo Construction & Geometry: Precise modular grid balancing serif letterforms with coffee bean aperture.",
+        "Corporate Stationery: Grid-aligned letterhead with minimalist branding on warm recycled kraft stock.",
+        "Digital Touchpoints: Dedicated favicon mark engineered for crisp pixel-level clarity across browsers."
+      ],
+      gallery: [
+        { src: "assets/projects/quor-house-construction.png", caption: "Grid & Geometry — Precision Logo Construction" },
+        { src: "assets/projects/quor-house-cup.png", caption: "3D Product Application — Ceramic Takeaway Roastery Mug" },
+        { src: "assets/projects/quor-house-letterhead-guidelines.jpg", caption: "Brand Stationery — Official Letterhead & Layout Guidelines" },
+        { src: "assets/projects/quor-house-favicon.png", caption: "Digital Favicon & Browser Interface Touchpoint" },
+        { src: "assets/projects/quor-house-cards.png", caption: "Tactile Business Cards on Basalt Presentation" }
       ],
       link: null
     },
@@ -107,20 +138,23 @@
       link: null
     },
 
-    tailor: {
-      tag: "Graphic Design · Print Craft",
-      title: "Fashion Monogram — Measuring Tape Letterpress",
-      tagline: "Minimalist geometry meets tactile material craft.",
-      image: "assets/projects/tailor-x-logo.png",
-      role: "Graphic Designer",
-      duration: "2024",
+    wolfx: {
+      tag: "Logo Design · Brand Identity",
+      title: "WOLFX Bikes — Final Year Brand Identity Project",
+      tagline: "Explore the world of WOLFX Bikes.",
+      image: "assets/projects/wolfx-logo.jpg",
+      role: "Lead Graphic Designer",
+      duration: "2024 — Final Year Project",
       tools: "Adobe Illustrator, Photoshop",
-      overview: "A minimalist monogram concept where a flexible tailoring measuring tape forms the letterform, stamped as a deep letterpress deboss on heavy cotton rag paper.",
-      problem: "Creating a stripped-down mark that celebrates the tools of the tailoring trade without visual clutter.",
-      solution: "Carefully calibrated tick marks and tape finials along the diagonal stroke to produce an unmistakable tailoring motif while preserving letterform balance.",
+      overview: "WOLFX is a bold, high-energy brand identity for a mountain biking company, built around a geometric wolf-head emblem integrated into a custom wordmark. From a clean black-and-white logo system to full brand applications across merch, event posters, and outdoor advertising.",
+      problem: "Design a brand mark that captures raw power, precision, and the adrenaline of mountain biking — using a bold typeface anchored by an iconic, integrated symbol.",
+      solution: "A geometric wolf-head icon that slots inside the letter 'O' of WOLFX, referencing speed and predatory agility. The stark black-and-white palette keeps the mark versatile across all surfaces — from jersey prints to billboard hoardings.",
       steps: [
-        "Explored scale, measurement intervals, and negative space stroke weight.",
-        "Created realistic tactile paper deboss mockups showing ink-free letterpress depth."
+        "Sketched and refined the wolf-head geometry — bold, angular, and legible at small sizes.",
+        "Developed full brand applications: business cards, event posters, social ads, merchandise (sneakers, caps, T-shirts), and outdoor billboards."
+      ],
+      gallery: [
+        { src: "assets/projects/wolfx-applications.jpg", caption: "Brand Rollout — Merch, Apparel, Event Collateral & Mega-Stadium Billboard" }
       ],
       link: null
     }
@@ -146,13 +180,42 @@
       `;
     }
 
-    let linkHtml = '';
-    if (data.link) {
-      linkHtml = `
-        <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line-subtle);">
-          <a href="${data.link}" class="btn btn--primary" style="width: 100%;">
-            Open Dedicated Case Study Page →
-          </a>
+    let actionsHtml = '';
+    if (data.link || data.figmaLink || data.protoLink) {
+      actionsHtml = `
+        <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line-subtle); display: flex; flex-direction: column; gap: 12px;">
+          ${data.protoLink ? `
+            <a href="${data.protoLink}" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="width: 100%; justify-content: center; gap: 8px;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              Run Interactive Prototype 📱
+            </a>
+          ` : ''}
+          ${data.figmaLink ? `
+            <a href="${data.figmaLink}" target="_blank" rel="noopener noreferrer" class="btn ${data.protoLink ? 'btn--ghost' : 'btn--primary'}" style="width: 100%; justify-content: center; gap: 8px;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 2a4 4 0 0 0 0 8h4V2H8zm8 0h-4v8h4a4 4 0 1 0 0-8zm-8 8a4 4 0 0 0 0 8h4v-8H8zm8 0h-4v8a4 4 0 1 0 4-4 4 4 0 0 0 0-4zm-8 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4v-4H8z"/></svg>
+              ${data.protoLink ? 'Inspect Design File in Figma ↗' : 'Explore Live in Figma ↗'}
+            </a>
+          ` : ''}
+          ${data.link ? `
+            <a href="${data.link}" ${data.linkText ? 'target="_blank" rel="noopener noreferrer"' : ''} class="btn ${data.linkText ? 'btn--primary' : 'btn--ghost'}" style="width: 100%; justify-content: center; gap: 8px;">
+              ${data.linkText || 'Open Dedicated Case Study Page →'}
+            </a>
+          ` : ''}
+        </div>
+      `;
+    }
+
+    let galleryHtml = '';
+    if (data.gallery && data.gallery.length > 0) {
+      galleryHtml = `
+        <h3 class="drawer-section-h3">Visual Artifacts & Brand Standards</h3>
+        <div class="drawer-gallery">
+          ${data.gallery.map(item => `
+            <div class="drawer-gallery__item">
+              <img src="${item.src}" alt="${item.caption || data.title}" class="drawer-gallery__img" loading="lazy" />
+              ${item.caption ? `<div class="drawer-gallery__caption">${item.caption}</div>` : ''}
+            </div>
+          `).join('')}
         </div>
       `;
     }
@@ -191,7 +254,9 @@
 
       ${stepsHtml}
 
-      ${linkHtml}
+      ${galleryHtml}
+
+      ${actionsHtml}
     `;
 
     drawer.classList.add('active');
@@ -319,5 +384,49 @@
   if (yearEl) {
     yearEl.textContent = `© ${new Date().getFullYear()}`;
   }
+
+  // ─── Dual CV Dropdown Interactions ───
+  const cvDropdowns = document.querySelectorAll('.cv-dropdown');
+  cvDropdowns.forEach(dropdown => {
+    const trigger = dropdown.querySelector('.cv-dropdown__trigger');
+    if (!trigger) return;
+
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.contains('open');
+      // close all dropdowns
+      cvDropdowns.forEach(d => {
+        d.classList.remove('open');
+        const btn = d.querySelector('.cv-dropdown__trigger');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        dropdown.classList.add('open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // Close dropdowns on outside click or escape
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.cv-dropdown')) {
+      cvDropdowns.forEach(d => {
+        d.classList.remove('open');
+        const btn = d.querySelector('.cv-dropdown__trigger');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      cvDropdowns.forEach(d => {
+        d.classList.remove('open');
+        const btn = d.querySelector('.cv-dropdown__trigger');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
 
 })();

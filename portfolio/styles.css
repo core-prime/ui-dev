@@ -360,6 +360,13 @@ ul {
   border-color: var(--line-subtle);
 }
 
+.badge--gold {
+  background: rgba(255, 217, 179, 0.2);
+  color: var(--accent-gold);
+  border: 1px solid rgba(255, 217, 179, 0.4);
+  font-weight: 700;
+}
+
 /* ═══════════════════════════════════════════════════════════════════
    HERO SECTION
    ═══════════════════════════════════════════════════════════════════ */
@@ -1260,6 +1267,44 @@ ul {
   padding: 20px;
 }
 
+.drawer-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 24px 0 28px;
+}
+
+.drawer-gallery__item {
+  background: #0e131d;
+  border: 1px solid var(--line-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.drawer-gallery__item:hover {
+  border-color: rgba(255, 217, 179, 0.35);
+  transform: translateY(-2px);
+}
+
+.drawer-gallery__img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  background: #090c12;
+  max-height: 480px;
+}
+
+.drawer-gallery__caption {
+  padding: 10px 14px;
+  font-size: 0.76rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  background: rgba(244, 241, 234, 0.02);
+  border-top: 1px solid rgba(244, 241, 234, 0.05);
+}
+
 .drawer-tag {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -1410,4 +1455,153 @@ ul {
   .drawer-meta-grid { grid-template-columns: 1fr; }
   .footer__container { flex-direction: column; text-align: center; }
   .footer__nav { flex-wrap: wrap; justify-content: center; }
+}
+
+/* ═══════════════════════════════════════════
+   DUAL CV DOWNLOAD DROPDOWN
+   ═══════════════════════════════════════════ */
+.cv-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.cv-dropdown__trigger {
+  cursor: pointer;
+  user-select: none;
+}
+
+.cv-dropdown__arrow {
+  transition: transform 0.25s ease;
+  margin-left: 2px;
+}
+
+.cv-dropdown.open .cv-dropdown__arrow {
+  transform: rotate(180deg);
+}
+
+.cv-dropdown__menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 310px;
+  background: rgba(18, 18, 22, 0.96);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 8px;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 217, 179, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.22s;
+  z-index: 120;
+}
+
+.cv-dropdown.open .cv-dropdown__menu,
+.cv-dropdown:hover .cv-dropdown__menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.cv-dropdown__menu--up {
+  top: auto;
+  bottom: calc(100% + 10px);
+  transform: translateY(8px);
+}
+
+.cv-dropdown.open .cv-dropdown__menu--up,
+.cv-dropdown:hover .cv-dropdown__menu--up {
+  transform: translateY(0);
+}
+
+.cv-dropdown__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.cv-dropdown__item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateX(3px);
+}
+
+.cv-dropdown__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.cv-dropdown__icon--creative {
+  background: rgba(255, 217, 179, 0.12);
+  color: var(--accent-gold);
+}
+
+.cv-dropdown__item:hover .cv-dropdown__icon {
+  background: var(--accent-gold);
+  color: var(--bg-dark);
+}
+
+.cv-dropdown__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cv-dropdown__title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-highlight);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cv-dropdown__hint {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.cv-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+}
+
+.cv-badge--gold {
+  background: var(--accent-gold);
+  color: var(--bg-dark);
+}
+
+@media (max-width: 768px) {
+  .cv-dropdown {
+    width: 100%;
+  }
+  .cv-dropdown__trigger {
+    width: 100%;
+  }
+  .cv-dropdown__menu {
+    min-width: 100%;
+    left: 0;
+    right: 0;
+  }
 }
