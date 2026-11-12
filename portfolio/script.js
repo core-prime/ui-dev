@@ -135,6 +135,7 @@
         "Vector geometric bezier curve refinement for crisp scaling at any resolution.",
         "3D exterior hanging blade sign visualization on limestone masonry."
       ],
+      figmaLink: "https://www.figma.com/design/FRMqEMqfwW9GKWqKRWIzPJ/portfolio?node-id=2008-2&p=f&t=LcM1ewdkHsT87Nbn-0",
       link: null
     },
 
