@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <script>
+//Traversal
+let arr = [10, 20, 30, 40, 50];
+
+// console.log(arr[0]);
+// console.log(arr[1]);
+for (let i = 0; i < arr.length; i++) {
+    console.log("TRAVERSAL", arr[i]);
+}
+// document.write("dfgh", `<p>${arr[i]}</p>`);
+
+//sum
+let arr1 = [5, 10, 15];
+let sum = 0;
+for (let i = 0; i < arr1.length; i++) {
+    sum += arr1[i]; // sum=sum+arr1[i] 0+5=5 5+10=15 15+15=30
+}
+console.log("Sum:", sum);
+
+//Largest
+let arr2 = [4, 9, 1, 7];
+let max = arr2[0];
+for (let i = 1; i < arr2.length; i++) {
+    if (arr2[i] > max) {
+        max = arr2[i];
+    }
+}
+console.log("Largest:", max);
+
+//Smallest
+let arr3 = [4, 9, 1, 7];
+let min = arr3[0];
+for (let i = 1; i < arr3.length; i++) {
+    if (arr3[i] < min) {
+        min = arr3[i];
+    }
+}
+console.log("Smallest:", min);
+
+//second largest
+arr = [...new Set(arr)]; // Remove duplicates
+arr.sort((a, b) => b - a);
+
+console.log("Second Largest:", arr[1]);
+
+    </script>
+
+</body>
+
+</html>

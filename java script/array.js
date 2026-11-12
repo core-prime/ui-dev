@@ -44,3 +44,61 @@ let moreFruits = ['grape', 'watermelon'];
 let combinedFruits = fruits.concat(moreFruits);
 console.log("combined fruits", combinedFruits);
 // combinedFruits: ['apple', 'orange', 'grape', 'watermelon']
+
+let filteredFruits = fruits.filter(fruit => fruit !== 'apple');
+console.log("filteredFruits:", filteredFruits);
+
+let hasApple = fruits.includes('apple');
+console.log("hasApple:", hasApple); // true
+
+fruits.sort();
+console.log("sortedFruits:", fruits);
+
+// arrays objects
+
+let fruitData = [
+    {
+        id: 1,
+        fruit: "Orange",
+        size: "Medium",
+        color: "Orange"
+    },
+    {
+        id: 2,
+        fruit: "Apple",
+        size: "Medium",
+        color: "Red"
+    },
+    {
+        id: 3,
+        fruit: "mango",
+        size: "Medium",
+        color: "Red"
+    }
+];
+
+let foundFruit = fruitData.find(fruit => fruit.id === 2);
+// document.write(foundFruit);
+console.log("foundFruit", foundFruit);
+console.log("ghj", foundFruit);
+
+let foundFruitData = fruitData.find(fruit => fruit !== "apple");
+
+console.log("foundFruitData", foundFruitData);
+
+let array = [8, 9, 3, 2, 5, 12, 1];
+
+let x = array.reduce(function (acc, cur) {
+    return acc + cur;
+}, 0);
+
+console.log("ghjk", x);
+
+let arr2 = array.sort();
+console.log("sort", arr2);
+
+let sortedArrAsc = array.sort((a, b) => a - b); // Sort the array numerically in asc
+console.log("sortNumerical", sortedArrAsc);
+
+let sortedArrDsc = array.sort((a, b) => b - a); // Sort the array numerically in desc
+console.log("sortNumerical", sortedArrDsc);
