@@ -24,6 +24,8 @@ let arr1 = [5, 10, 15];
 let sum = 0;
 for (let i = 0; i < arr1.length; i++) {
     sum += arr1[i]; // sum=sum+arr1[i] 0+5=5 5+10=15 15+15=30
+console.log("Sum:", sum);
+
 }
 console.log("Sum:", sum);
 
@@ -52,6 +54,14 @@ arr = [...new Set(arr)]; // Remove duplicates
 arr.sort((a, b) => b - a);
 
 console.log("Second Largest:", arr[1]);
+
+//Reverse
+let arr4 = ['a', 'b', 'c', 'd']; //d,c,b,a
+let reversed = [];
+for (let i = arr4.length - 1; i >= 0; i--) {
+    reversed.push(arr4[i]);
+}
+console.log(reversed);
 
     </script>
 
