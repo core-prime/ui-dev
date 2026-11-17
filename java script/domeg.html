@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Hello</h1>
+
+    <h2 id="stitle">World</h2>
+    <button onclick="change()">Click</button>
+
+
+    <h3 class="head">Welcome</h3>
+    <h3 class="head">come</h3>
+
+    <p>Rojan</p>
+    <script>
+        document.getElementById('title').innerHTML="Haii"
+
+        function change(){
+            document.getElementById('stitle').innerHTML="hello"
+
+            document.getElementById('stitle').innerText="Rojan"
+
+        document.getElementById('stitle').style.color="blue"
+
+        document.getElementById('stitle').style.fontSize="44px"
+
+        document.getElementsByClassName("head")[1].innerText="Rojan"
+
+    document.getElementsByTagName('p')[0].innerHTML="hellooo"
+        }
+    </script>
+
+</body>
+</html>

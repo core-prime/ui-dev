@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exact Calculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #202020;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .calculator {
+      width: 320px;
+    }
+
+    #display {
+      width: 100%;
+      height: 85px;
+      background-color: #6b6b6b;
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      padding: 0 20px;
+      font-size: 32px;
+      text-align: right;
+      outline: none;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    button {
+      height: 75px;
+      background-color: #424242;
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      font-size: 24px;
+      cursor: pointer;
+      transition: background-color 0.15s ease;
+    }
+
+    /* Matches the lighter hover state seen on button '8' in your image */
+    button:hover {
+      background-color: #7a7a7a;
+    }
+
+    button:active {
+      background-color: #5c5c5c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+      <!-- Row 1 -->
+      <button>C</button>
+      <button>/</button>
+      <button>*</button>
+      <button>-</button>
+
+      <!-- Row 2 -->
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>+</button>
+
+      <!-- Row 3 -->
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>=</button>
+
+      <!-- Row 4 -->
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>0</button>
+    </div>
+  </div>
+
+  <script>
+    // 1. Select the display and all buttons using the DOM
+    const display = document.querySelector('#display');
+    const buttons = document.querySelectorAll('button');
+
+    // 2. Loop through every button and attach a click event listener
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const value = button.textContent;
+
+        if (value === 'C') {
+          // Clear the display
+          display.value = '';
+        } else if (value === '=') {
+          // Calculate the expression safely
+          try {
+            if (display.value !== '') {
+              display.value = Function('"use strict";return (' + display.value + ')')();
+            }
+          } catch (error) {
+            display.value = 'Error';
+          }
+        } else {
+          // Reset if previous state was an Error, then append clicked value
+          if (display.value === 'Error') {
+            display.value = '';
+          }
+          display.value += value;
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
