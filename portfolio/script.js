@@ -49,7 +49,7 @@
       ],
       sitemap: "The complete sitemap encompasses 12 dedicated pages—balancing dual onboarding flows for parents and caregivers, a trust & safety center, and transparent service tiers.",
       link: "case-nanora.html",
-      figmaLink: "https://www.figma.com/design/klnUPGZXtfZLhOvzbqwynk/Nanora-%E2%80%94-Landing-Page?node-id=0-1&t=Zf918zWOVC3KPX6T-1"
+      figmaLink: "https://www.figma.com/design/klnUPGZXtfZLhOvzbqwynk/Nanora-%E2%80%94-Landing-Page?node-id=0-1&t=D7JysDTqnzH5wvUo-1"
     },
 
     nexora: {
