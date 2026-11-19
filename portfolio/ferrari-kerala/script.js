@@ -203,11 +203,90 @@ if (audioToggle) {
   });
 }
 
+// Cockpit Instrument Cluster References
+const hudGear = document.getElementById("hud-gear");
+const hudRpm = document.getElementById("hud-rpm");
+const hudSpeed = document.getElementById("hud-speed");
+const hudBoost = document.getElementById("hud-boost");
+const hudModeIndicator = document.getElementById("hud-mode-indicator");
+const tachoCircle = document.getElementById("tacho-circle");
+const shiftLights = document.querySelectorAll(".shift-light");
+
+let isRevving = false;
+const CIRCLE_LENGTH = 477; // 2 * PI * 76
+
+function updateTachometer(rpmValue) {
+  if (!tachoCircle) return;
+  const clamped = Math.max(0, Math.min(8.5, rpmValue));
+  const fraction = clamped / 8.5;
+  const offset = CIRCLE_LENGTH - (fraction * (CIRCLE_LENGTH - 40));
+  tachoCircle.style.strokeDashoffset = offset;
+  if (hudRpm) hudRpm.textContent = clamped.toFixed(1);
+
+  // F1 Shift lights thresholds
+  const thresholds = [2.8, 4.0, 5.2, 6.4, 7.2, 7.8, 8.2];
+  shiftLights.forEach((light, i) => {
+    if (clamped >= thresholds[i]) {
+      light.classList.add("is-lit");
+    } else {
+      light.classList.remove("is-lit");
+    }
+  });
+}
+
+function triggerCockpitRev(mode = "hybrid") {
+  if (isRevving) return;
+  isRevving = true;
+
+  document.body.classList.add("is-rumbling");
+  if (hudGear) hudGear.textContent = "1";
+  
+  const startTime = performance.now();
+  const duration = mode === "qualify" ? 2100 : 1800;
+  const peakRpm = mode === "edrive" ? 9.2 : 8.4;
+
+  function animateRev(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(1, elapsed / duration);
+
+    let currentRpm = 0.8;
+    let currentSpeed = 0;
+
+    if (progress < 0.45) {
+      const p = progress / 0.45;
+      const ease = p * p * (3 - 2 * p);
+      currentRpm = 0.8 + ease * (peakRpm - 0.8);
+      currentSpeed = Math.floor(ease * 72);
+    } else {
+      const p = (progress - 0.45) / 0.55;
+      const ease = p * p;
+      currentRpm = peakRpm - ease * (peakRpm - 0.8);
+      currentSpeed = Math.floor(72 * (1 - ease));
+    }
+
+    updateTachometer(currentRpm);
+    if (hudSpeed) hudSpeed.innerHTML = `${currentSpeed} <small>KM/H</small>`;
+
+    if (progress < 1) {
+      requestAnimationFrame(animateRev);
+    } else {
+      updateTachometer(0.8);
+      if (hudGear) hudGear.textContent = "N";
+      if (hudSpeed) hudSpeed.innerHTML = `0 <small>KM/H</small>`;
+      document.body.classList.remove("is-rumbling");
+      isRevving = false;
+    }
+  }
+
+  requestAnimationFrame(animateRev);
+}
+
 // Hero Engine Rev Button
 if (heroRevBtn) {
   heroRevBtn.addEventListener("click", () => {
     const currentMode = document.body.dataset.driveMode || "hybrid";
     playEngineRev(currentMode);
+    triggerCockpitRev(currentMode);
   });
 }
 
@@ -234,6 +313,7 @@ async function startExperience() {
   }, 120);
 
   showSlide(0);
+  updateTachometer(0.8);
 }
 
 // ==========================================
@@ -469,6 +549,10 @@ emanettinoBtns.forEach((btn) => {
 
     const mode = btn.getAttribute("data-mode");
     document.body.dataset.driveMode = mode;
+
+    if (hudModeIndicator) {
+      hudModeIndicator.textContent = mode.toUpperCase();
+    }
 
     const lang = document.documentElement.lang;
     const desc = modeDescriptions[mode];

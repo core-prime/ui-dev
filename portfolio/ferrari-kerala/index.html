@@ -6,6 +6,7 @@
   <meta name="description" content="An independent, futuristic portfolio concept imagining the Ferrari 296 GTB experience in Kerala.">
   <meta name="theme-color" content="#080e0a">
   <title>Ferrari Kerala — Futuristic 296 GTB Concept</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=JetBrains+Mono:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,8 +22,12 @@
     <div class="preloader__tech-grid" aria-hidden="true"></div>
     <div class="preloader__logo">
       <div class="preloader__hud-ring"></div>
-      <span class="brand__monogram">F<span>/</span>K</span>
-      <span class="brand__name">KERALA · CONCEPT 296</span>
+      <div class="preloader__shield-container">
+        <img src="assets/ferrari-shield.svg" alt="Ferrari Scuderia Shield Emblem" class="preloader__shield-img" width="80" height="104">
+        <div class="preloader__scan-laser" aria-hidden="true"></div>
+      </div>
+      <span class="brand__title">FERRARI KERALA</span>
+      <span class="brand__subtitle">296 GTB · CONCEPT ARCHITECTURE</span>
       <div class="preloader__status">
         <span class="preloader__status-text" id="preloader-text">INITIALIZING TELEMETRY...</span>
         <div class="preloader__bar"><div class="preloader__bar-fill" id="preloader-bar"></div></div>
@@ -45,11 +50,20 @@
     </button>
 
     <a class="brand" href="#home" aria-label="Ferrari Kerala concept home">
-      <span class="brand__monogram">F<span>/</span>K</span>
-      <span class="brand__name">KERALA · 296 GTB</span>
+      <div class="brand__emblem-box">
+        <img src="assets/ferrari-shield.svg" alt="Ferrari Shield Emblem" class="brand__shield-img" width="30" height="39">
+      </div>
+      <div class="brand__text-block">
+        <span class="brand__name">FERRARI KERALA</span>
+        <span class="brand__sub">296 GTB · CONCEPT</span>
+      </div>
     </a>
 
     <div class="header-right">
+      <a class="header-action portfolio-back-btn" href="../" title="Return to Rojan Roy Portfolio">
+        <span class="btn-arrow">←</span>
+        <span>PORTFOLIO</span>
+      </a>
       <button class="header-action audio-toggle" id="audio-toggle" aria-label="Toggle telemetry sound fx" title="Toggle Interactive Audio Engine">
         <span class="audio-waves" aria-hidden="true">
           <span></span><span></span><span></span><span></span>
@@ -102,29 +116,92 @@
         <div class="scene-image" id="scene-image"></div>
       </div>
 
-      <div class="hero-topline">
-        <span class="telemetry-badge" data-en="CHASSIS SPEC: 296 GTB KERALA EDITION" data-ml="ഷാസി സ്പെക്: 296 GTB കേരള എഡിഷൻ">CHASSIS SPEC: 296 GTB KERALA EDITION</span>
-        <span class="coordinates-track">10°31' N &nbsp;·&nbsp; 76°13' E &nbsp;//&nbsp; SYSTEM ONLINE</span>
-      </div>
+      <div class="hero-main-container">
+        <!-- Hero Left Column: Luxury Typography & Controls -->
+        <div class="hero-copy" aria-live="polite">
+          <div class="hero-topline">
+            <div class="telemetry-badge-wrapper">
+              <span class="telemetry-badge" data-en="CHASSIS SPEC: 296 GTB KERALA EDITION" data-ml="ഷാസി സ്പെക്: 296 GTB കേരള എഡിഷൻ">CHASSIS SPEC: 296 GTB KERALA EDITION</span>
+              <span class="hero-pill-badge">V6 TWIN-TURBO HYBRID</span>
+            </div>
+            <span class="coordinates-track"><i class="coords-dot"></i> 10°31' N · 76°13' E // SYSTEM NOMINAL</span>
+          </div>
 
-      <div class="hero-copy" aria-live="polite">
-        <div class="hero-kicker-wrapper">
-          <span class="hero-pill-badge">V6 TWIN-TURBO HYBRID</span>
-          <p class="hero-kicker" id="slide-kicker">01 // KINETIC ARRIVAL</p>
+          <div class="hero-kicker-wrapper">
+            <p class="hero-kicker" id="slide-kicker">01 // KINETIC ARRIVAL</p>
+          </div>
+          <h1 id="slide-title">Redefining Speed<br>for the <em>Western Ghats.</em></h1>
+          <p id="slide-description" data-en="A cinematic, futuristic vision fusing Maranello engineering with the monsoon soul of Kerala. 830 CV unleashed on coastal tarmac." data-ml="മാരനെല്ലോയുടെ എഞ്ചിനീയറിംഗും കേരളത്തിന്റെ പ്രകൃതി സൗന്ദര്യവും സമന്വയിക്കുന്ന സിനിമാറ്റിക് പോർട്ട്ഫോളിയോ ആശയം. 830 കുതിരശക്തിയുടെ വിസ്മയം.">A cinematic, futuristic vision fusing Maranello engineering with the monsoon soul of Kerala. 830 CV unleashed on coastal tarmac.</p>
+          
+          <div class="hero-actions">
+            <a class="hero-cta-button" href="#model">
+              <span class="btn-text" data-en="INSPECT VEHICLE" data-ml="വാഹനം പരിശോധിക്കുക">INSPECT VEHICLE</span>
+              <span class="btn-icon" aria-hidden="true">↗</span>
+              <div class="btn-glare"></div>
+            </a>
+            <button class="sound-rev-btn" id="hero-rev-btn" title="Synthesize Hybrid Engine Roar">
+              <span class="sound-icon">⚡</span>
+              <span data-en="REV HYBRID V6" data-ml="എഞ്ചിൻ ശബ്ദം കേൾക്കൂ">REV HYBRID V6</span>
+            </button>
+          </div>
         </div>
-        <h1 id="slide-title">Redefining Speed<br>for the <em>Western Ghats.</em></h1>
-        <p id="slide-description" data-en="A cinematic, futuristic vision fusing Maranello engineering with the monsoon soul of Kerala. 830 CV unleashed on coastal tarmac." data-ml="മാരനെല്ലോയുടെ എഞ്ചിനീയറിംഗും കേരളത്തിന്റെ പ്രകൃതി സൗന്ദര്യവും സമന്വയിക്കുന്ന സിനിമാറ്റിക് പോർട്ട്ഫോളിയോ ആശയം. 830 കുതിരശക്തിയുടെ വിസ്മയം.">A cinematic, futuristic vision fusing Maranello engineering with the monsoon soul of Kerala. 830 CV unleashed on coastal tarmac.</p>
-        
-        <div class="hero-actions">
-          <a class="hero-cta-button" href="#model">
-            <span class="btn-text" data-en="INSPECT VEHICLE" data-ml="വാഹനം പരിശോധിക്കുക">INSPECT VEHICLE</span>
-            <span class="btn-icon" aria-hidden="true">↗</span>
-            <div class="btn-glare"></div>
-          </a>
-          <button class="sound-rev-btn" id="hero-rev-btn" title="Synthesize Hybrid Engine Roar">
-            <span class="sound-icon">⚡</span>
-            <span data-en="REV HYBRID V6" data-ml="എഞ്ചിൻ ശബ്ദം കേൾക്കൂ">REV HYBRID V6</span>
-          </button>
+
+        <!-- Hero Right Column: 3D Live Cyber Instrument Cluster (HUD) -->
+        <div class="hero-hud-cluster" id="hero-hud-cluster" data-tilt>
+          <div class="cluster-reticle" aria-hidden="true"></div>
+          
+          <!-- F1 Shift Lights Bar -->
+          <div class="f1-shift-lights" id="f1-shift-lights" title="Dynamic Shift Lights">
+            <span class="shift-light shift-light--green"></span>
+            <span class="shift-light shift-light--green"></span>
+            <span class="shift-light shift-light--yellow"></span>
+            <span class="shift-light shift-light--yellow"></span>
+            <span class="shift-light shift-light--red"></span>
+            <span class="shift-light shift-light--red"></span>
+            <span class="shift-light shift-light--blue"></span>
+          </div>
+
+          <!-- Digital Tachometer Gauge -->
+          <div class="tachometer-dial">
+            <svg class="tacho-svg" viewBox="0 0 200 200">
+              <defs>
+                <linearGradient id="tachoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#00ff88" />
+                  <stop offset="60%" stop-color="#ffd000" />
+                  <stop offset="100%" stop-color="#ff2800" />
+                </linearGradient>
+              </defs>
+              <circle class="tacho-track" cx="100" cy="100" r="76" />
+              <circle class="tacho-value" id="tacho-circle" cx="100" cy="100" r="76" />
+            </svg>
+            <div class="tacho-center">
+              <span class="gear-display" id="hud-gear">N</span>
+              <span class="rpm-display" id="hud-rpm">0.8</span>
+              <span class="rpm-unit">RPM × 1000</span>
+            </div>
+          </div>
+
+          <div class="cluster-metrics">
+            <div class="metric-box">
+              <span class="metric-label">SPEED</span>
+              <span class="metric-val" id="hud-speed">0 <small>KM/H</small></span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-box">
+              <span class="metric-label">MGU-K BOOST</span>
+              <span class="metric-val" id="hud-boost">100%</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-box">
+              <span class="metric-label">MODE</span>
+              <span class="metric-val mode-highlight" id="hud-mode-indicator">HYBRID</span>
+            </div>
+          </div>
+
+          <div class="cluster-footer">
+            <span class="hud-pulse-radar"></span>
+            <span>LIVE 296 GTB TELEMETRY COCKPIT</span>
+          </div>
         </div>
       </div>
 
@@ -436,8 +513,13 @@
 
   <footer class="footer">
     <a class="brand brand--footer" href="#home" aria-label="Back to Ferrari Kerala concept home">
-      <span class="brand__monogram">F<span>/</span>K</span>
-      <span class="brand__name">KERALA · CONCEPT 296</span>
+      <div class="brand__emblem-box">
+        <img src="assets/ferrari-shield.svg" alt="Ferrari Shield Emblem" class="brand__shield-img" width="24" height="31">
+      </div>
+      <div class="brand__text-block">
+        <span class="brand__name">FERRARI KERALA</span>
+        <span class="brand__sub">296 GTB · CONCEPT ARCHITECTURE</span>
+      </div>
     </a>
     <p data-en="Independent Portfolio Concept · Fictional Thrissur Setting · Crafted by Rojan Roy"
        data-ml="സ്വതന്ത്ര പോർട്ട്ഫോളിയോ ആശയം · സാങ്കൽപ്പിക തൃശ്ശൂർ പശ്ചാത്തലം · നിർമ്മിച്ചത് റോജൻ റോയ്">
